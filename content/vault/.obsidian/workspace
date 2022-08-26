@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "74ad4af88195af7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "050d0da226b4a87f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Análise de algoritmos.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e8690cf9966edcbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f09ee2795742b92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86feb3d5f0c01f6c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "80cd8923094ca509",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 330.0107650756836
+  },
+  "right": {
+    "id": "bc9998075e112b02",
+    "type": "split",
+    "children": [
+      {
+        "id": "d83722a298ae26c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2d01b78c4a3d963f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Análise de algoritmos.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "050d0da226b4a87f",
+  "lastOpenFiles": [
+    "01 - Visão geral.md",
+    "Análise de algoritmos.md",
+    "Árvores de expressões.md",
+    "Árvores binárias.md",
+    "Competição de ordenação de listas ligadas.md",
+    "Listas duplamente encadeadas.md",
+    "Listas ligadas.md",
+    "Árvores B.md",
+    "Excalidraw/ArvoreBexemplo.excalidraw.md",
+    "Árvores B+.md"
+  ]
+}

@@ -1,0 +1,66 @@
+- Princípios de [[Análise de algoritmos]] análise de algoritmos
+- [[Tipo Abstrato de Dados ]]
+
+- Introdução a estruturas de dados
+	- Para que estudar estruturas de dados
+		- "For many applications, the choice of the proper data structure is the only major decision involved in the implementation: once the choice has been made, the necessary algorithms are simple." [[1998Sedgewick_AlgorithmInCPart1-4]]
+	- Array é a estrutura mais fundamental presente em diversas linguagens de programação.
+		- Os valores são armazenados sequencialmente na memória
+	- Operações primitivas e não primitivas
+		- Primitivas: Só podem ser implementadas através de uma solução dependente da estrutura de armazenamento
+			- Operações primitivas de arrays
+				- Criar um array com um determinado **número de elementos** do mesmo tipo de dado.
+				- Acessar um elemento em uma posição específica.
+				- Alterar o valor armazenado em uma posição específica.
+		- Não primitivas: Podem ser implementadas através de chamadas para as operações primitivas. 
+			- Operações não primitivas em arrays
+				- Inserir um novo elemento em uma posição específica do array
+				- Encontrar o menor (ou maior) elemento armazenado no array
+				- Ordenar um array
+		- Listas em Python. As listas em Python são mais flexíveis do que vetores (arrays) em C/C++ por exemplo.
+			- Tamanho variável
+			- Tipos dos objetos armazenados não precisa ser o mesmo
+			- Operações primitivas
+				- Criação da lista
+				- Adição de elementos em uma posição específica
+				- Remoção de elementos em uma posição específica
+			- [[Implementação CPython de listas]]
+	- Recomendações de Engenharia de Software [[1998Sedgewick_AlgorithmInCPart1-4|Algorithms in C. Parts 1-4 (Sedgewick. 1998)]]. Separação da implementação em:
+		- Interface: Define a estrutura de dados e declara as funções utilizadas para manipular a estrutura de dados.
+		- Implementação das funções declaradas na interface.
+		- Cliente: Programa que utiliza as funções declaradas na interface. Permite trabalhar em um nível maior de abstração.
+	- Alocação de memória para conjuntos de elementos
+		- Alocação sequencial
+			- Os elementos ficam em posições adjacentes de memória.
+		- Alocação estática
+			- Espaço de memória definido previamente para todos os seus elementos.
+
+- [[Listas ligadas]]
+	- Lista ligada simples
+	- Listas duplamente ligadas
+	- Listas circulares
+	- Nós sentinelas
+	- Coleções iteráveis
+
+- [[Pilhas]]
+- [[Filas]]
+- Árvores
+	- Árvores binárias
+		- Árvores binárias de busca
+			- Árvores binárias de busca balanceadas
+				- Árvores AVL
+				- Árvores Preto-e-vermelho
+				- Árvores Splay
+- Grafos
+- Tabela Hash
+- Algoritmos de ordenação
+	- Quadráticos
+		- Bubble sort
+		- Insertion sort
+		- Selection sort
+	- $O(nlogn)$
+		- Quicksort
+		- Heapsort
+		- Mergesort
+	- Lineares
+- [[Organização de arquivos]]

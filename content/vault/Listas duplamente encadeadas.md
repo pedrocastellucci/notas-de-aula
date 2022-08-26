@@ -1,0 +1,3 @@
+---
+alias: [Lista duplamente ligada]
+---
