@@ -1,3 +1,8 @@
+---
+title: "Editing Content in Quartz"
+---
+
+
 - [[Análise de algoritmos]]
 - [[Recursão]]
 - [[Tipo Abstrato de Dados]]
