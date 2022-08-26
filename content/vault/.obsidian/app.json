@@ -10,5 +10,6 @@
     "downscalePercent": 100
   },
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "newLinkFormat": "absolute"
 }
