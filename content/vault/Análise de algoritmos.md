@@ -181,11 +181,11 @@ function divisoes(n):
 
 Os gráficos a seguir apresentam uma comparação visual entre as classes. No eixo horizontal está o tamanho do problema e no eixo vertical o custo (ambos em escala arbitrária).
 
-![[Pasted image 20220419152228.png|500]]
+![[attachments/Pasted image 20220419152228.png|500]]
 
-![[Pasted image 20220419152332.png|500]]
+![[attachments/Pasted image 20220419152332.png|500]]
 
-![[Pasted image 20220419152407.png|500]]
+![[attachments/Pasted image 20220419152407.png|500]]
 
 # Referências e outros materiais
 - Complexidade de Algoritmos I - Noção Intuitiva. Canal do Youtube: Programação Dinâmica. https://youtu.be/KVlGx-9CuO4
