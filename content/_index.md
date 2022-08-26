@@ -2,6 +2,8 @@
 title: 🪴 Quartz 3.2
 ---
 
+Indo para as minhas páginas [clique aqui](vault/"01 - Visão geral.md")
+
 Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
 
 1. Extremely fast natural-language [[notes/search|search]]
