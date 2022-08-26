@@ -1,7 +1,0 @@
-- Exemplos do livro Estruturas de Dados com Jogos
-	- Jogo FreeCell
-	- [[Torre de Hanoi]]
-- [[Avaliação de expressões aritmética]]. [[2011Sedgewick_Algorithms|Algorithms (Sedgewick e Wayne. 2011)]]
-- Conversão de notação infixa para pós-fixa. [[1998Sedgewick_AlgorithmInCPart1-4|Algorithms in C. Parts 1-4 (Sedgewick. 1998)]]
-- Avaliação de expressões pós-fixa. [[1998Sedgewick_AlgorithmInCPart1-4|Algorithms in C. Parts 1-4 (Sedgewick. 1998)]]
-- [[Sequências de parênteses e colchetes]]
