@@ -1,4 +1,4 @@
-name: Jacky Zhao
+name: Pedro Belin Castellucci
 enableToc: true
 openToc: false
 enableLinkPreview: true
@@ -11,16 +11,15 @@ enableFooter: true
 enableContextualBacklinks: true
 enableRecentNotes: false
 enableGitHubEdit: true
-GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+GitHubLink: https://github.com/pedrocastellucci/notas-de-aula/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  Tentando criar notas de aula
 page_title:
-  "🪴 Quartz 3.2"
+  "Notas de aula 📖"
 links:
   - link_name: Twitter
-    link: https://twitter.com/_jzhao
+    link: https://twitter.com/pbcastellucci
   - link_name: Github
-    link: https://github.com/jackyzha0
+    link: https://github.com/pedrocastellucci
