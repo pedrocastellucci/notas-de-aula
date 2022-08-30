@@ -1,8 +1,16 @@
 ---
-title: 🪴 Quartz 3.2
+title: "Introdução"
 ---
 
-Indo para as minhas páginas [clique aqui](vault/visao-geral.md)
+
+Este é um rascunho de notas de aula para os conteúdos de:
+
+- Cálculo Numérico
+- [[vault/estrutura-dados/visao-geral|Estrutura de Dados]]
+- Otimização linear e inteira
+
+
+Estou utilizando a ferramenta Quartz. Mais informações a seguir. 
 
 Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
 
@@ -22,7 +30,7 @@ Returning user? Figure out how to [[notes/updating|update]] your existing Quartz
 If you prefer browsing the contents of this site through a list instead of a graph, you see a list of all [setup-related notes](/tags/setup).
 
 ### Troubleshooting
-- 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
+- 🚧🪴 [Troubleshooting and FAQ](notes/troubleshooting.md)
 - 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
 - 👀 [Discord Community](https://discord.gg/cRFFHYye7t)
 
