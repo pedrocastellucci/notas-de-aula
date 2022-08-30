@@ -5,7 +5,7 @@ title: "Introdução"
 
 Este é um rascunho de notas de aula para os conteúdos de:
 
--[[vault/calculo-numerico/visao-geral | Cálculo Numérico]]
+- [[vault/calculo-numerico/visao-geral |Cálculo Numérico]]
 - [[vault/estrutura-dados/visao-geral|Estrutura de Dados]]
 - Otimização linear e inteira
 
