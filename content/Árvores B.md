@@ -25,7 +25,7 @@ alias: Árvore B
 
 - A árvore B mais simples possui $t=2$. Cada nó interno possui 2, 3 ou 4 filhos (ou seja, é uma 2-3-4 árvore).
 
-![[ArvoreBexemplo.excalidraw|900]]
+![[vault/attachments/ArvoreBexemplo.excalidraw|900]]
 
 
 - O número de acessos ao disco em uma Árvore B é proporcional a altura da árvore, para a maiora das operações
