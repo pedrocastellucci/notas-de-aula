@@ -1,0 +1,39 @@
+- O que é Cálculo Numérico
+	- Solução de modelos matemáticos. 
+- A ordem das parecelas altera a soma
+	- [[Sistemas de numeração]]
+	- [[Conversões entre bases]]		
+	- [[Números reais versus representação digital]]
+- Solução de equações
+	- [[Método da bipartição]]
+	- [[Método da falsa-posição]]
+	- [[Método de Newton]]
+	- [[Resolução de equações polinomais]]
+	- [[Método de Birge-Vietta]]
+	- [[Método de Müller]]
+- Solução de sistemas de equações
+	- Sistemas lineares
+		- [[Eliminação de Gauss]]
+		- [[Decomposição LU]]
+		- [[Método de Jacobi]]
+		- [[Método de Gauss-Seidel]]
+		- [[Técnicas de relaxação]]
+	- Sistemas não lineares
+		- [[Método de Newton]]
+		- [[Métodos de Quasi-Newton]]
+- Resolução número de Equações Diferenciais
+	- [[Método de Euler]]
+	- [[Métodos de Runge-Kutta]]
+	- [[Sistemas de equações diferenciais]]
+- Resolução numérica de integrais definidas
+	- [[Métodos de Newton-Côtes]]
+	- [[Métodos de Gauss-Legendre]]
+- Ajustamento de curvas
+	- [[Método dos mínimos quadrados]]
+- Interpolação polinomial
+	- [[Existência e unicidade do polinômio interpolador]]
+	- [[Método de Lagrange]]
+	- [[Método de Gregory-Newton]]
+	- [[Erros de truncamento em interpolação]]
+	- [[Splines cúbicas]]
+- [[Octave]]
