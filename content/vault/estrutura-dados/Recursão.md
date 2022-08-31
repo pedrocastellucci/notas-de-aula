@@ -8,7 +8,7 @@ title: "Recursão"
 - Recursão é um conceito genérico presente em várias disciplinas e na própria natureza.
 - Uma entidade (ou conceito) é recursivo quando é composto por instâncias menores dele mesmo (ou similares). 
 - Alguns exemplo (Figura retirada de [[2017Sanchez_IntroductionRecursiveProgramming|Introduction to recursive programming. Sanchez (2019)]]): 
-	- ![[Pasted image 20220412150007.png]]
+	- ![[vault/estrutura-dados/attachments/Pasted image 20220412150007.png]]
 	- Há também entidades menos concretas que são identificadas como recursivas. Por exemplo a sequência $(s_1, s_2, \ldots, s_n)$ definida de acordo com $$s_n = s_{n-1} + s_{n-2}.$$ A fórmula define que o $n$-ésimo termo da sequência é dado pela soma dos dois anteriores. Portanto, os termos da sequência são definidos a partir deles mesmos. Note que não é apenas uma sequência que é definida a partir da fórmula. 
 		- Quais são exemplos de sequências que são definidas pelas fórmula apresentada #pergunta 
 			- Tipicamente, se utiliza $s_1 = s_2 = 1$, o que define a [[Sequência de Fibonacci]].
