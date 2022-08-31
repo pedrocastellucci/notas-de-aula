@@ -89,8 +89,6 @@ def sum_first3(L):
         return sum_first3(L[0:n//2]) + sum_first3(L[n//2:])
 ```
 
-
-	
 ### Indução
 
 O termo *indução* é relacionado a provas matemáticas por indução. A ideia principal é que, ao se desenvolver uma solução recursiva, deve-se assumir que o código recursivo já funciona para instâncias menores (mais simples) do problema que se deseja resolver (mesmo que ele ainda não esteja implementado). 

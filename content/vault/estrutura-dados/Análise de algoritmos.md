@@ -69,10 +69,10 @@ for i = 1, ..., n
 	for j = 1, ..., n
 		c[i, j] = 0
 		for k = 1, ..., n
-			c[i, j] = c[i, j] + a[i, j]*b[k, j]
+			c[i, j] = c[i, j] + a[i, k]*b[k, j]
 ```
 
-O comando mais executado no algoritmo é a linha $c[i, j] = c[i, j] + a[i, j]*b[k, j]$. Quantas vezes ela é executada? #pergunta
+O comando mais executado no algoritmo é a linha $c[i, j] = c[i, j] + a[i, k]*b[k, j]$. Quantas vezes ela é executada? #pergunta
 
 ## Notação Big-O
 
@@ -136,7 +136,7 @@ function busca(x, v):
 	return False
 ```
 
-Nesses casos, frequentemente, o interesse está na complexidade de pior caso, isto é, o caso que está relacionada com o maior número de operações. Outro caso importante é a análise de caso médio, isto é, em determinar, na média, qual a complexidade do algoritmo. Essa análise pode ser bastante sofisiticada e, em geral, está fora do escopo deste material.
+Nesses casos, frequentemente, o interesse está na complexidade de pior caso, isto é, o caso que está relacionado com o maior número de operações. Outro caso importante é a análise de caso médio, isto é, em determinar, na média, qual a complexidade do algoritmo. Essa análise pode ser bastante sofisiticada e, em geral, está fora do escopo deste material.
 
 ## Algumas classes de complexidade
 
