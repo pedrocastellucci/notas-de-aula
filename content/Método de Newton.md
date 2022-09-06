@@ -6,7 +6,7 @@ alias: "Método de Newton-Raphson"
 # O método de Newton (ou Newton-Raphson)
 
 ## Notas históricas
-Embora o nome do método seja derivado de [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton). A descrição do método que vamos estudar é substancialmente diferente do utilizado originalmente por Newton. A primeira publicação desse método é datada de 1685. Em 1690, [Joseph Raphson ](https://en.wikipedia.org/wiki/Joseph_Raphson), publicou uma descrição simplificado. Por isso, o método é muitas vezes chamado de Método de Newton-Raphson. Newton e Raphson aplicaram o método exclusivamente para polinômios, foi apenas em 1740 que [Thomas Simpson](https://en.wikipedia.org/wiki/Thomas_Simpson) descreveu o método como um método iterativo para resolver equações não lineares usando [[Cálculo]]. Essencialmente, essa é a descrição que será apresentada aqui. ^[Informações históricas retiradas de https://en.wikipedia.org/wiki/Newton's_method]
+Embora o nome do método seja derivado de [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton). A descrição do método que vamos estudar é substancialmente diferente do utilizado originalmente por Newton. A primeira publicação desse método é datada de 1685. Em 1690, [Joseph Raphson ](https://en.wikipedia.org/wiki/Joseph_Raphson), publicou uma descrição simplificado. Por isso, o método é muitas vezes chamado de Método de Newton-Raphson. Newton e Raphson aplicaram o método exclusivamente para polinômios, foi apenas em 1740 que [Thomas Simpson](https://en.wikipedia.org/wiki/Thomas_Simpson) descreveu o método como um método iterativo para resolver equações não lineares usando [[Cálculo]]. Essencialmente, essa é a descrição que será apresentada aqui.
 
 
 
@@ -87,7 +87,9 @@ $$\lim_{k \to \infty} x_{k+1} = \lim_{k \to \infty} x_{k} -
 Como $f(x)$ e $f'(x)$ são contínuas, tem-se:
 
 $$
-\lim_{k \to \infty} f(x_{k}) = f(\lim_{k \to \infty} x_{k}) \mbox{ e } \lim_{k \to \infty} f'(x_{k}) = f'(\lim_{k \to \infty} x_{k})
+\lim_{k \to \infty} f(x_{k}) = f(\lim_{k \to \infty} x_{k}) 
+$$
+e $$\lim_{k \to \infty} f'(x_{k}) = f'(\lim_{k \to \infty} x_{k})
 $$
 
   Então, 
@@ -109,3 +111,4 @@ Assim, se a sequência gerada pela equação de recorrência for convergente, o 
 # Referências e outros materiais
 - Peters, Sérgio, e Julio Felipe Szeremeta. Cálculo numérico computacional (2019).
 - Newton's method produces this fractal, why don't we teach it in calculus classes? by 3Blue1Brown. Disponível em: https://youtu.be/-RdOwhmqP5s.
+- Newton's method. Disponível em: https://en.wikipedia.org/wiki/Newton's_method
