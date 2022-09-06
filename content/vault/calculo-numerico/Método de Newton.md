@@ -1,14 +1,12 @@
 ---
 title: "Método de Newton"
-alias: "Método de Newton-Raphson"
+alias: ["Método de Newton-Raphson", "método de Newton"]
 ---
 
 # O método de Newton (ou Newton-Raphson)
 
 ## Notas históricas
 Embora o nome do método seja derivado de [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton). A descrição do método que vamos estudar é substancialmente diferente do utilizado originalmente por Newton. A primeira publicação desse método é datada de 1685. Em 1690, [Joseph Raphson ](https://en.wikipedia.org/wiki/Joseph_Raphson), publicou uma descrição simplificado. Por isso, o método é muitas vezes chamado de Método de Newton-Raphson. Newton e Raphson aplicaram o método exclusivamente para polinômios, foi apenas em 1740 que [Thomas Simpson](https://en.wikipedia.org/wiki/Thomas_Simpson) descreveu o método como um método iterativo para resolver equações não lineares usando [[Cálculo]]. Essencialmente, essa é a descrição que será apresentada aqui.
-
-
 
 ## Descrição do método
 
@@ -35,16 +33,13 @@ Então, pode-se repetir o processo para gerar uma sequência de aproximações $
 
 $$x_{k+1} = x_k - \frac{f(x_k)}{f'(x_{k})}, \quad k = 1, 2, \ldots,$$
 ### Critérios de erro
-
 Algumas medidas de erro que podem ser utilizadas como critério de parada para o Método de Newton.
 - $|x_{k+1} - x_k| < \epsilon$. Esse critério pode não ser adequado quando a sequência converge lentamente.
 - $\frac{|x_{k+1} - x_k|}{|x_{k+1}|} < \epsilon$. Interessante quando $x_{k+1}$ é muito pequeno (mas não nulo), ou muito grande.
 - $|f(x_{k+1})| < \epsilon$. Esse critério pode não ser adequado quando $f(x_k)$ possui valores pequenos.
 - $|f(x_{k+1})| + \frac{|x_{k+1} - x_k|}{|x_{k+1}|} < \epsilon$. Compõe dois anteriores, é mais conservador.
 
-
 ## Exemplos
-
 - Utilizando o método de Newton para encontrar um zero da função $f(x) = cos(x) - x$,  com aproximação inicial $x_0 = 0$. 
 	- Primeira iteração:
 		- $x_0 = 0$.
@@ -86,38 +81,45 @@ $$
 \lim_{k \to \infty} x_{k+1} = \lim_{k \to \infty} x_{k} - \lim_{k \to \infty}
 \frac{f(x_{k})}{f'(x_{k})}, 
 $$
-
 $$\lim_{k \to \infty} x_{k+1} = \lim_{k \to \infty} x_{k} -
 \frac{\lim_{k \to \infty}f(x_{k})}{\lim_{k \to \infty}f'(x_{k})}$$
 
-
 Como $f(x)$ e $f'(x)$ são contínuas, tem-se:
-
 $$
 \lim_{k \to \infty} f(x_{k}) = f(\lim_{k \to \infty} x_{k}) 
 $$
 e $$\lim_{k \to \infty} f'(x_{k}) = f'(\lim_{k \to \infty} x_{k})
 $$
-
   Então, 
 $$
 \lim_{k \to \infty} x_{k+1} = \lim_{k \to \infty} x_{k} - \frac{\displaystyle f(\lim_{k \to
     \infty}x_{k})}{\displaystyle f'(\lim_{k \to \infty} x_{k})}.
 $$
-
 Como $\displaystyle \lim_{k \to \infty}x_{k+1} = \lim_{k \to \infty}x_{k} = \alpha$, tem-se:
 
 $$
 \alpha = \alpha - \frac{f(\alpha)}{f'(\alpha)}
 $$
-
 Portanto, $\frac{f(\alpha)}{f'(\alpha)} = 0$ e $f(\alpha) = 0$, desde que $f'(\alpha) \neq 0$. Logo, $\alpha$ é solução de $f(x) = 0$. 
-
 Assim, se a sequência gerada pela equação de recorrência for convergente, o seu limite sempre será solução de $f(x) = 0$.
 
 ## Considerações sobre a convergência
 
 A convergência do método de Newton é quadrática.
+
+## Método de Newton para raízes complexas
+
+Considere o polinômio $P(x) = x^6 + 64$, que possui uma raiz complexa $x = 2i$. Para que o método de Newton consiga gerar uma sequência convergente para a raiz $x = 2i$, é necessário para que a aproximação inicial tenha uma componente imaginária $x_0 = a + bi, b \neq 0$. 
+
+Por exemplo, supondo $x_0 = i$, tem-se:
+$$x_1 = x_0 - \frac{x_0^6 + 64}{6x_0^5} = 11.5i,$$
+$$x_2 = 9.58339i,$$
+$$x_3 = 7.98629i,$$
+$$x_4 = 6.5557i,$$
+e, assim por diante, até a convergência. Note que se $x_0 = 1+i$, o valor de convergência é $1.7321 - 1.0000i$, que também é uma das raízes de $P(x) = 0$.
+
+A convergência do método de Newton para as raízes de polinômios gera o chamado [Fractal de Newton](https://en.wikipedia.org/wiki/Newton_fractal). 
+<a href="https://upload.wikimedia.org/wikipedia/commons/d/db/Julia_set_for_the_rational_function.png"><img alt="File:Julia set for the rational function.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Julia_set_for_the_rational_function.png/800px-Julia_set_for_the_rational_function.png?20111026001115" decoding="async" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Julia_set_for_the_rational_function.png/1200px-Julia_set_for_the_rational_function.png?20111026001115 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Julia_set_for_the_rational_function.png/1600px-Julia_set_for_the_rational_function.png?20111026001115 2x" data-file-width="2000" data-file-height="1500" width="720" height="540"></a>
 
 # Referências e outros materiais
 - Peters, Sérgio, e Julio Felipe Szeremeta. Cálculo numérico computacional (2019).

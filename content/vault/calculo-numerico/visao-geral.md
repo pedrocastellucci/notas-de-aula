@@ -12,6 +12,7 @@ title: "Visão geral"
 	- [[Método da bipartição]]
 	- [[Método da falsa-posição]]
 	- [[Método de Newton]]
+	- [[Método das secantes]]
 	- [[Resolução de equações polinomais]]
 	- [[Método de Birge-Vietta]]
 	- [[Método de Müller]]
