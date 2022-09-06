@@ -4,9 +4,9 @@ title: "Visão geral"
 
 - O que é Cálculo Numérico
 	- Solução de modelos matemáticos. 
-- A ordem das parecelas altera a soma
+- A ordem das parcelas altera a soma
 	- [[Sistemas de numeração]]
-	- [[Conversões entre bases]]		
+	- [[Conversões entre bases]]
 	- [[Números reais versus representação digital]]
 - Solução de equações
 	- [[Método da bipartição]]
