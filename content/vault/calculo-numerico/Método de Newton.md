@@ -59,10 +59,17 @@ Algumas medidas de erro que podem ser utilizadas como critério de parada para o
 		- $x_3 = x_2 - f(x_2)/f'(x_2) = 0.7503 - (-0.01882)/(-1.682) = 0.7391$.
 		- $erro = \frac{|0.7391 - 0.7503|}{|0.7391|} = 0.01515$.
 
-- Como um outro exemplo, considere a função $f(x) = x^{\frac{1}{3}}$. A relação de recorrência do método de Newton para essa função é dada por $$x_{k+1} = x_k - \frac{x^{\frac{1}{3}}}{\frac{1}{3}x^{-\frac{2}{3}}} = -2x_k.$$ Portanto, independente de qual aproximação inicial (não nula) for utilizada, a sequência gerada será divergente. Por exemplo, $x_0 = 1$ a sequência gerada seria $(1, -2, 4, -8, 16, -32, \ldots)$.  Isso mostra que a sequência gerada pelo método de Newton não possui garantia de convergência. 
+- Como um outro exemplo, considere a função $f(x) = x^{\frac{1}{3}}$. A relação de recorrência do método de Newton para essa função é dada por $$x_{k+1} = x_k - \frac{x^{\frac{1}{3}}}{\frac{1}{3}x^{-\frac{2}{3}}} = -2x_k.$$ Portanto, independente de qual aproximação inicial (não nula) for utilizada, a sequência gerada será divergente. Por exemplo, $x_0 = 1$ a sequência gerada seria $(1, -2, 4, -8, 16, -32, \ldots).$  Isso mostra que a sequência gerada pelo método de Newton não possui garantia de convergência. 
 
-- $f(x) = x^3 - 2x + 2$, com $x_0 = 0$
+- Considere a equação polinomial $x^3 - 2x + 2 = 0$, ao se tentar encontrar uma raiz da equação utilizando o método de Newton, com $x_0 = 0$. Observe o que ocorre.
+	- $x_{1} = x_0 - \frac{x_0^3 - 2x_0 + 2}{3x_0^2 - 2} = 0 - \frac{2}{-2} = 1$
+	- $x_2 = x_1 - \frac{x_1^3 - 2x_1 +2}{3x_1^2-2} = 1 - \frac{1}{1} = 0$
+	- $x_3 = 1, x_4 =0, \ldots,$ sem nunca convergir.
+	- graficamente, tem-se o seguinte: <iframe src="https://www.desmos.com/calculator/epndu9typm?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+	- Note que esse exemplo é apenas para ilustrar uma situação possível de oscilação entre os valores. Na prática, é possível encontrar uma raiz de polinômios cúbicas utilizando o [método de Cardano-Tartaglia](https://pt.wikipedia.org/wiki/Equa%C3%A7%C3%A3o_c%C3%BAbica). Aliás, a solução de equações cúbicas está relacionada a uma novela matemática e à invenção de números imaginárias ([saiba mais](https://youtu.be/cUzklzVXJwo)).  
 
+
+Os exemplos anteriores lançam uma dúvida sobre o método. Afinal, o método de Newton é confiável? Será que ele é eficiente comparado ao [[Método da bipartição]] ou o [[Método da falsa-posição]]? Exploraremos tais aspectos a seguir.
 
 ## Considerações sobre a convergência
 
@@ -106,7 +113,11 @@ $$
 
 Portanto, $\frac{f(\alpha)}{f'(\alpha)} = 0$ e $f(\alpha) = 0$, desde que $f'(\alpha) \neq 0$. Logo, $\alpha$ é solução de $f(x) = 0$. 
 
-Assim, se a sequência gerada pela equação de recorrência for convergente, o seu limite sempre será solução.
+Assim, se a sequência gerada pela equação de recorrência for convergente, o seu limite sempre será solução de $f(x) = 0$.
+
+## Considerações sobre a convergência
+
+A convergência do método de Newton é quadrática.
 
 # Referências e outros materiais
 - Peters, Sérgio, e Julio Felipe Szeremeta. Cálculo numérico computacional (2019).
