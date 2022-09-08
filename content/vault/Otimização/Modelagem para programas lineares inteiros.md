@@ -98,8 +98,8 @@ Uma empresa está considerando expandir suas operações para dois novos estados
 
 Para modelar o problema com o paradigma de Programação Inteira, considere as variáveis binárias
 
-$$x_j = \begin{cases}1\quad \mbox{se a decis\~{a}o $j$ é sim},\\ 
-0\quad \mbox{caso contrário},\end{cases}\quad (j = 1, 2, 3, 4).$$
+$$x_j = \begin{cases}1\quad \mbox{em caso afirmativo},\\ 
+0\quad \mbox{em caso negativo},\end{cases}\quad (j = 1, 2, 3, 4).$$
 
 | Decisão                    | Variável | Retorno previsto (R\$) | Investimento necessário (R\$)| 
 | -------------------------- | ------------------- | ---------------- | ----------------------- |
@@ -145,7 +145,7 @@ Deseja-se que pelo menos uma dessas restrições seja atendida, mas não necessa
 
 Uma forma de realizar isso é utilizar uma variável auxiliar $y \in \{0, 1\}$.
 
-$$y = \begin{cases}0, \mbox{ se $2x_1 + 3x_2 \leq 20$ é atendida } \\ 1, \mbox{ se $5x_1 + 2x_2 \leq 18$ é atendida } \\\end{cases}$$
+$$y = \begin{cases}0, \mbox{ se } 2x_1 + 3x_2 \leq 20 \\ 1, \mbox{ se } 5x_1 + 2x_2 \leq 18 \\\end{cases}$$
 
 Então, seja $M$ um número grande, podemos modelar a situação como:
 
@@ -179,7 +179,7 @@ O custo fixo ocorre quando há um custo inicial para um atividade. Por exemplo, 
 
 Como exemplo, considere que foi feito um pedido para um aplicativo de transporte, o custo por quilômetro de viagem é de $c$, mas é pago um custo fixo, ao início da corrida de $k$. O objetivo é modelar a função de custo $f(x)$ em função da distância percorrida $x$.	
 
-$$f(x) = \begin{cases}k + cx \mbox{ se $x > 0$,} \\ 0, \mbox{ caso contrário}\end{cases}$$
+$$f(x) = \begin{cases}k + cx \mbox{ se $x > 0$,} \\ 0, \mbox{ se } x \leq 0.\end{cases}$$
 
 Para a construção do modelo, pode-se utilizar uma variável auxiliar $y \in \{0, 1\}$ que toma valor 1 se $x > 0$ e 0 caso contrário. 
 
