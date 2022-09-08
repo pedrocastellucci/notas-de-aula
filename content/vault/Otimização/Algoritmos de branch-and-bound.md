@@ -29,7 +29,7 @@ Por exemplo, se $N = 4$ basta avaliar todas as sequências $(N-1)! = 6$  sequên
 
 A relação de recorrência para gerar as permutações de uma sequência $S = (0, 1, \ldots, N-1)$ de tamanho $N$ é dada por 
 
-$$S_N = \bigcup_{C \notin S_{N-1}} \Big\{S_{N-1} C \Big\}$$
+$$S_N = \bigcup_{i \notin S_{N-1}}\left\{S_{N-1} | i\right\}$$
 ### Implementação utilizando [[Backtracking]]
 
 Pode-se realizar uma numeração explícita da todas as permutações da sequência $S = (0, 1, \ldots, N-1)$, computar o custo de cada uma delas, identificando, assim uma solução ótima. Para isso, pode-se utilizar o código a seguir.
