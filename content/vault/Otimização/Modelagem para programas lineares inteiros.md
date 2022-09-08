@@ -98,8 +98,8 @@ Uma empresa está considerando expandir suas operações para dois novos estados
 
 Para modelar o problema com o paradigma de Programação Inteira, considere as variáveis binárias
 
-$$x_j = \begin{cases}1\quad \mbox{em caso afirmativo},\\ 
-0\quad \mbox{em caso negativo},\end{cases}\quad (j = 1, 2, 3, 4).$$
+$$x_j = \begin{cases}1 \quad \text{em caso afirmativo},\\ 
+0\quad \text{em caso negativo},\end{cases}\quad (j = 1, 2, 3, 4).$$
 
 | Decisão                    | Variável | Retorno previsto (R\$) | Investimento necessário (R\$)| 
 | -------------------------- | ------------------- | ---------------- | ----------------------- |
@@ -145,7 +145,7 @@ Deseja-se que pelo menos uma dessas restrições seja atendida, mas não necessa
 
 Uma forma de realizar isso é utilizar uma variável auxiliar $y \in \{0, 1\}$.
 
-$$y = \begin{cases}0, \mbox{ se } 2x_1 + 3x_2 \leq 20 \\ 1, \mbox{ se } 5x_1 + 2x_2 \leq 18 \\\end{cases}$$
+$$y = \begin{cases}0, \text{ se } 2x_1 + 3x_2 \leq 20 \\ 1, \text{ se } 5x_1 + 2x_2 \leq 18 \\\end{cases}$$
 
 Então, seja $M$ um número grande, podemos modelar a situação como:
 
