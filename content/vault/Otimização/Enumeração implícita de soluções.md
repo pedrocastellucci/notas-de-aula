@@ -1,15 +1,15 @@
 ---
-title: "Branch-and-bound"
-alias: "branch-and-bound"
+title: "Enumeração implícita"
+alias: "enumeração implícita"
 ---
 
-# A estratégia de Branch-and-bound
+# A estratégia de [[Branch-and-bound]]
 
-A estratégia de [[Algoritmos de branch-and-bound|Branch-and-bound]] foi proposta originalmente em 1960 por [[Ailsa Land]] e [[Alison Doig]] como método para solução de problemas discretos de otimização. 
+A estratégia de [[vault/Otimização/Enumeração implícita de soluções|Branch-and-bound]] foi proposta originalmente em 1960 por [[Ailsa Land]] e [[Alison Doig]] como método para solução de problemas discretos de otimização. Trata-se de uma forma de enumerar implicitamente as soluções viáveis de um problema.
 
 Juntamente com [[Algoritmos de planos de corte]] constituem o framework [[Branch-and-cut]], base de diversos pacotes computacionais para problemas de [[Otimização Inteira]].
 
-Para exemplificar a estratégia do [[vault/Otimização/Algoritmos de branch-and-bound|branch-and-bound]] vamos utilizar o [[Problema do Caixeiro Viajante]].
+Para exemplificar a estratégia do [[vault/Otimização/Enumeração implícita de soluções|branch-and-bound]] vamos utilizar o [[Problema do Caixeiro Viajante]].
 
 # O [[Problema do Caixeiro Viajante]]
 
@@ -130,7 +130,7 @@ Com a poda por qualidade baseada no custo das soluções parciais é possível r
 | 15  | 325.719   |
 
 
-### [[Algoritmos de branch-and-bound]], utilizando um [[limitante inferior]]
+### [[vault/Otimização/Enumeração implícita de soluções]], utilizando um [[limitante inferior]]
 
 É possível utilizar uma poda que inclui informações otimistas sobre o custo a ser atingido caso se continue explorando determinado ramo da árvore.  Uma opção é utilizar a [[Problema da Árvore Geradora Mínima|Árvore Geradora Mínima]] dos nós que ainda não foram visitados pela solução parcial atual. 
 
@@ -186,7 +186,7 @@ Com isso, executando algumas instâncias, obteve-se o seguinte resultado
 | 22  | 367.061   |
 
 
-Quando se tem uma estratégia para conseguir um limitante otimista (inferior no caso de problemas de minimização e superior no caso de problemas de minimização), pode-se desenvolver um algoritmo de [[Algoritmos de branch-and-bound|Branch-and-bound]]. 
+Quando se tem uma estratégia para conseguir um limitante otimista (inferior no caso de problemas de minimização e superior no caso de problemas de minimização), pode-se desenvolver um algoritmo de [[vault/Otimização/Enumeração implícita de soluções|Branch-and-bound]]. 
 
 ## Algumas conclusões
 
@@ -197,10 +197,10 @@ Quando se tem uma estratégia para conseguir um limitante otimista (inferior no 
 		- Poda por qualidade
 		- Poda por infactibilidade
 	- Encontrar problemas auxiliares que forneçam bons limitantes inferiores
-- Existe um arcabouço que já possui todas essas "funcionalidades". Inclusive com pacotes computacionais com toda a ideia de [[Algoritmos de branch-and-bound]] (e diversas outras) já implementada, sendo necessário, apenas, fornecer os dados de entrada. Para aprendermos a utilizar tais ferramentas, precisamos aprender [[Programação Linear Inteira Mista]].
+- Existe um arcabouço que já possui todas essas "funcionalidades". Inclusive com pacotes computacionais com toda a ideia de [[vault/Otimização/Enumeração implícita de soluções]] (e diversas outras) já implementada, sendo necessário, apenas, fornecer os dados de entrada. Para aprendermos a utilizar tais ferramentas, precisamos aprender [[Programação Linear Inteira Mista]].
 
 # Referências
 
 - [Land, Ailsa H., and Alison G. Doig. An automatic method for solving discrete programming problems. Econometrica
-Vol. 28, No. 3 (Jul., 1960), pp. 497-520. ]([https://doi.org/10.2307/1910129](https://doi.org/10.2307/1910129 "This link opens in a new window")
-- Palestra *Tuning a TSP Algorithm*. https://www.youtube.com/watch?v=SS5KfIFzfEE&list=FLQDy63aSs-IH4Zbniv8x4jA&index=4&t=4206s
+Vol. 28, No. 3 (Jul., 1960), pp. 497-520. ](https://link.springer.com/chapter/10.1007/978-3-540-68279-0_5)
+- Palestra [Tuning a TSP Algorithm](https://youtu.be/SS5KfIFzfEE). 
