@@ -7,7 +7,7 @@ Este é um rascunho de notas de aula para os conteúdos de:
 
 - [[vault/calculo-numerico/visao-geral |Cálculo Numérico]]
 - [[vault/estrutura-dados/visao-geral|Estrutura de Dados]]
-- Otimização linear e inteira
+- [[vault/Otimização/visao-geral|Otimização linear e inteira]]
 
 
 Estou utilizando a ferramenta Quartz. Mais informações a seguir. 
