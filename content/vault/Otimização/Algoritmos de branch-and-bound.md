@@ -3,13 +3,13 @@ title: "Branch-and-bound"
 alias: "branch-and-bound"
 ---
 
-# Branch-and-bound
+# A estratégia de Branch-and-bound
 
 A estratégia de [[Algoritmos de branch-and-bound|Branch-and-bound]] foi proposta originalmente em 1960 por [[Ailsa Land]] e [[Alison Doig]] como método para solução de problemas discretos de otimização. 
 
 Juntamente com [[Algoritmos de planos de corte]] constituem o framework [[Branch-and-cut]], base de diversos pacotes computacionais para problemas de [[Otimização Inteira]].
 
-Para exemplificar a estratégia do [[vault/Otimização/Algoritmos de branch-and-bound|branch-and-bound]] vamos utilizar o [[vault/Otimização/Problema do Caixeiro Viajante]].
+Para exemplificar a estratégia do [[vault/Otimização/Algoritmos de branch-and-bound|branch-and-bound]] vamos utilizar o [[Problema do Caixeiro Viajante]].
 
 # O [[Problema do Caixeiro Viajante]]
 
@@ -28,6 +28,7 @@ Por exemplo, se $N = 4$ basta avaliar todas as sequências $(N-1)! = 6$  sequên
 6.  $(0, 3, 2, 1)$
 
 A relação de recorrência para gerar as permutações de uma sequência $S = (0, 1, \ldots, N-1)$ de tamanho $N$ é dada por 
+
 $$S_N = \bigcup_{i \notin S_{N-1}} \Big\{S_{N-1} | i \Big\}$$
 ### Implementação utilizando [[Backtracking]]
 

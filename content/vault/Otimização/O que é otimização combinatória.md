@@ -1,5 +1,6 @@
 ---
 title: "Otimização combinatória"
+alias: [otimização combinatória]
 ---
 
 # Introdução à otimização combinatória
@@ -18,6 +19,6 @@ Duas dessas estratégias são: métodos exatos e métodos heurísticos. Os méto
 
 ![[attachments/Pasted image 20220908151703.png]]
 
-Dentre os métodos exatos está o arcabouço conhecido como [[Branch-and-cut||branch-and-cut]]. A implementação de algoritmos de [[vault/Otimização/Branch-and-cut|branch-and-cut]] para um problema costuma ser não trivial. Para garantir a eficiência de tais algoritmos é necessário combinar estratégias de pré-processamento, exploração de árvores de branch-and-bound, planos de corte, entre outros. Nesse caso, é necessário construir problemas auxiliares para a obtenção de limitantes duais para o problema a ser resolvido. O arcabouço de branch-and-cut é de tamanha importância que há diversos pacotes computacionais que fornecem uma implementação pronta como [[Gurobi]], [[SCIP]], [[CPlex]] e [[Cbc]]. Para utilizar tais pacotes é necessário conseguir escrever o problema utilizando o paradigma de [[vault/Otimização/Modelagem para programas lineares inteiros||Programação Linear e Inteira]]. 
+Dentre os métodos exatos está o arcabouço conhecido como [[Branch-and-cut||branch-and-cut]]. A implementação de algoritmos de [[vault/Otimização/Branch-and-cut|branch-and-cut]] para um problema costuma ser não trivial. Para garantir a eficiência de tais algoritmos é necessário combinar estratégias de pré-processamento, exploração de árvores de branch-and-bound, planos de corte, entre outros. Nesse caso, é necessário construir problemas auxiliares para a obtenção de limitantes duais para o problema a ser resolvido. O arcabouço de branch-and-cut é de tamanha importância que há diversos pacotes computacionais que fornecem uma implementação pronta como [[Gurobi]], [[SCIP]], [[CPlex]] e [[Cbc]]. Para utilizar tais pacotes é necessário conseguir escrever o problema utilizando o paradigma de [[vault/Otimização/Modelagem para programas lineares inteiros|Programação Linear e Inteira]]. 
 
 Métodos de solução heurísticos relaxam a garantia de otimalidade da solução em prol de reduzir os recursos computacionais necessários, em geral, deseja-se obter uma solução de boa qualidade (não necessariamente ótima) mais rapidamente. Existem diversas estratégias heurísticas, meta-heurísticas, que podem ser aplicadas a inúmeros problemas. Entre eles estão [[algoritmos genéticos]], [[algoritmos de colônias de formigas]], [[otimização por enxame de particulas]], [[busca tabu]], [[simulated annealing]], [[iterated local search]], [[variable neighborhood search]],  e muitos outros.

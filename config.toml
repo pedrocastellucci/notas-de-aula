@@ -1,6 +1,6 @@
-baseURL = "https://pedrocastellucci.github.io/notas-de-aula/"
-languageCode = "en-us"
-googleAnalytics = ""
+baseURL = "https://pedrocastellucci.github.io/notas-de-aula"
+languageCode = "pt-br"
+googleAnalytics = "G-XYFD95KB4J"
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [

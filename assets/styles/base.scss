@@ -29,14 +29,12 @@ html {
 
 
 body {
-  margin: auto;
+  margin: 0;
   height: 100vh;
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
   background-color: var(--light);
-  text-align: justify;
-  text-justify: auto;
 }
 
 h1, h2, h3, h4, h5, h6, thead {
