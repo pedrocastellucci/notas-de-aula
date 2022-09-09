@@ -27,7 +27,31 @@ Note que essa definição é recursiva, de forma que uma árvore $T$ é vazia ou
 > - Um **caminho** em uma árvore $T$ é uma sequência de nós em $T$ de forma que quaisquer dois nós consecutivos na sequência formam uma aresta de $T$.
 > - Uma árvore é **ordenada** se existe uma relação de ordem linear entre os filhos de qualquer nó.
 
-### Altura e profundidade de uma árvore
+### Profundidade e altura de uma árvore
+
+> [!INFO]
+> Seja $p$  um nó da árvore. A profundidade de $p$ é o número de ancestrais que $p$ possui, com exceção dele mesmo
+
+- Note que, pela definição, 
+	- se $p$ é a raiz da árvore então a profunidade de $p$ é zero; 
+	- senão a profundidade de $p$ é igual a profundidade do pai de $p$ mais um.
+Com isso, pode-se construir o seguinte algoritmo, que computa a profundidade de um nó $p$.
+
+```python
+def depth(p):
+	if (isRoot(p)):
+		return 0
+	else:
+		return 1 + depth(parent(p))
+```
+
+O algoritmo tem custo de pior caso $O(d_p)$ em que $d_p$ é a profundidade do nó $p$.
+
+> [!INFO]
+> A altura de um nó $p$ de uma árvore $T$ é igual ao maior valor de profundidade dos nós da subárvore enraizada em $p$.
+
+> [!TODO] 
+> Algoritmo para altura de um nó $p$
 
 ## Percursos em árvores
 
