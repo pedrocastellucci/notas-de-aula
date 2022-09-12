@@ -13,6 +13,7 @@ title: "Visão geral"
 - [[Tabelas de símbolos]]
 	- [[Tabelas hash]]
 - [[Árvores]]
+	- [[Percursos em árvores]]
 	- [[Árvores binárias]]
 	- [[Árvores binárias de busca]]
 		- [[Árvores binárias de busca balanceadas]]
