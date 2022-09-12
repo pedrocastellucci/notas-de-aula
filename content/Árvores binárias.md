@@ -16,9 +16,9 @@ Uma árvore binária é chamada de **própria** se cada nó tem zero ou dois fil
 Também, é possível definir uma árvore binária de forma recursiva.
 > [!CITE] (Goodrich et al, 2013)
 > Uma árvore binária $T$ é vazia ou consiste de:
-> 	- um nó $r$, chamado de raiz da árvore $T$;
-> 	- uma árvore binária (possivelmente vazia), chamada de subárvore esquerda de $T$;
-> 	- uma árvore binária (possivelmente vazia), chamada de subárvore direita de $T$.
+> - um nó $r$, chamado de raiz da árvore $T$;
+> - uma árvore binária (possivelmente vazia), chamada de subárvore esquerda de $T$;
+> - uma árvore binária (possivelmente vazia), chamada de subárvore direita de $T$.
 
 ## Exemplos
 

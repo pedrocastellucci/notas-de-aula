@@ -22,8 +22,7 @@ def preorder(T):
 
 Considere o exemplo a seguir com a árvore enraizada em $A$. 
 
-![](https://mermaid.ink/img/pako:eNpV0M0OgjAMB_BXWXqGF9jBRByK-IGJHndpWBWiAzLHwRDe3bHswHrq799e2gnqXhFweBkcGvYQsmOutixNNyxbY8fWEpHyoMxrH-kQJLyKSMdIZVDhdVrjHEa51yXSNVIVVHndFkACmozGVrk7pyWRYBvSJIG7VqF5S5Dd7PZwtP3919XArRkpgXFQaEm06N6jgT_x86X5D4QzSz4)](https://mermaid.live/edit#pako:eNpV0M0OgjAMB_BXWXqGF9jBRByK-IGJHndpWBWiAzLHwRDe3bHswHrq799e2gnqXhFweBkcGvYQsmOutixNNyxbY8fWEpHyoMxrH-kQJLyKSMdIZVDhdVrjHEa51yXSNVIVVHndFkACmozGVrk7pyWRYBvSJIG7VqF5S5Dd7PZwtP3919XArRkpgXFQaEm06N6jgT_x86X5D4QzSz4)
-
+![](https://mermaid.ink/img/pako:eNpV0M0OgjAMB_BXWXqGF9jBRByK-IGJHndpWBWiAzLHwRDe3bHswHrq799e2gnqXhFweBkcGvYQsmOutixNNyxbY8fWEpHyoMxrH-kQJLyKSMdIZVDhdVrjHEa51yXSNVIVVHndFkACmozGVrk7pyWRYBvSJIG7VqF5S5Dd7PZwtP3919XArRkpgXFQaEm06N6jgT_x86X5D4QzSz4)
 O percurso em pré-ordem visita os nós na seguinte ordem: 
 - A, B, F, G, C, D, H, K, L, I, J, E, M, N, O, P
 
