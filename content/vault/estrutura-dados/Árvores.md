@@ -63,7 +63,7 @@ def height(p):
 
 O custo de pior caso do algoritmo para a altura é $O(n)$ visto que, se chamado a partir da raiz da árvore, todos os nós serão percorridos e o custo para cada chamada da função é constante. 
 
-Repare na ordem com que os nós da árvore são percorridos tanto no algoritmo para o cálculo da profundidade quanto da altura. Um tema importante em estruturas não lineares é como realizar o percurso nessas estruturas de forma eficiente. Há alguns [[Percursos em árvores]] clássicos como o percurso em [[Percursos em árvores#^fa633f|pré-ordem]] [[Percursos em árvores#^9628fb|pós-ordem]] e em [[Percursos em árvores#^bde67f |largura]].
+Repare na ordem com que os nós da árvore são percorridos tanto no algoritmo para o cálculo da profundidade quanto da altura. Um tema importante em estruturas não lineares é como realizar o percurso nessas estruturas de forma eficiente. Há alguns [[vault/estrutura-dados/Percursos em árvores]] clássicos como o percurso em [[vault/estrutura-dados/Percursos em árvores#^fa633f|pré-ordem]] [[vault/estrutura-dados/Percursos em árvores#^9628fb|pós-ordem]] e em [[vault/estrutura-dados/Percursos em árvores#^bde67f |largura]].
 
 # Referências
 - Goodrich, M. T., Tamassia, R., & Goldwasser, M. H. (2014). _Data structures and algorithms in Java_. John Wiley & Sons.

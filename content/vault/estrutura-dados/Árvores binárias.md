@@ -36,13 +36,21 @@ Também, é possível definir uma árvore binária de forma recursiva.
 
 ## Percurso em-ordem em árvores binárias
 
-Além dos [[Percursos em árvores|percursos em árvores]] já definidos, em árvores binárias também há o percurso em-ordem (ou ordem simétrica)
+Além dos [[vault/estrutura-dados/Percursos em árvores|percursos em árvores]] já definidos, em árvores binárias também há o percurso em-ordem (ou ordem simétrica)
 
->[!TODO]
-> Código para percurso em ordem simétrica em árvore binária
+```python
+def inorder(T, root):
+	if (root):
+		inorder(T, root.left)
+		visit(root)
+		inorder(T, root.right)
+```
 
 ## Implementações de árvore binária
 
+É possível implementar árvores binárias utilizando duas ideias:
+- Implementação em vetores
+- Implementação encadeda
 
 # Referências
 - Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms. third. _New York_.

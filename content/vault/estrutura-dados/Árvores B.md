@@ -74,7 +74,7 @@ Do ponto de vista de gerenciamento de arquivos. Suponha que foi utilizado uma es
 
 ### Inserção
 
-O processo de inserção é relativamente mais sofisticado do que no caso de [[Árvores binárias]]. Inicialmente, se busca pela folha onde será realizada a inserção. No entanto, não se pode simplesmente criar um novo nó para inserir o elemento, pois isso implicaria em uma violação das propriedades definidores de uma árvore B. Qual propriedade? #pergunta 
+O processo de inserção é relativamente mais sofisticado do que no caso de [[vault/estrutura-dados/Árvores binárias]]. Inicialmente, se busca pela folha onde será realizada a inserção. No entanto, não se pode simplesmente criar um novo nó para inserir o elemento, pois isso implicaria em uma violação das propriedades definidores de uma árvore B. Qual propriedade? #pergunta 
 
 Nesse caso, o objetivo é inserir o elemento no próprio nó folha, que pode estar cheio. Para lidar com tal situação, pode ser necessário realizar uma operação de particionamento do nó folha (*split*). 
 
@@ -119,7 +119,7 @@ Considere uma árvore com $n$ elementos. Em que tipo de nó (folha ou interno), 
 
 Uma das motivações primordiais da proposição da estrutura de dados Árvore B é no contexto de gerencia de arquivos com acesso indexado sequencial. Nesse estratégia, é criado um índice auxiliar com a posição das chaves dos registros que estão armazenados em memória secundária. Quando o índice auxiliar pode ser armazenado completamente em memória primária, há um grande ganho de eficiência na operação de busca, em relação a ter que buscar em um arquivo em memória secundária. Por outro lado, pode não ser possível armazenar todo o índice em memória primária. Nessa situação, pode ser interessante armazenar o índice em uma estrutura de Árvore B. 
 
-Uma vantagem de se utilizar árvore B nesse caso é a possibilidade de armazenar os nós mais altos da árvore na memória principal, minimizando o número de requisições à memória secundária. Além disso, durante a busca, se for necessário carregar novos dados em memória, isso é feito lendo um bloco de informações (e não apenas um único valor, como seria no caso de outras [[Árvores binárias]]).
+Uma vantagem de se utilizar árvore B nesse caso é a possibilidade de armazenar os nós mais altos da árvore na memória principal, minimizando o número de requisições à memória secundária. Além disso, durante a busca, se for necessário carregar novos dados em memória, isso é feito lendo um bloco de informações (e não apenas um único valor, como seria no caso de outras [[vault/estrutura-dados/Árvores binárias]]).
 
 Uma desvantagem dessa estratégia é a de que são armazenadas, em cada nó, referências para cada valor na memória secundária, além do valor em si (os registros propriamente ditos). Isso reduz consideravelmente o número de chaves que pode ser armazenadas na memória principal, aumentando o número de acessos à memória secundária. Para reduzir essa desvantagem, podem ser utilizadas [[Árvores B+]].
 

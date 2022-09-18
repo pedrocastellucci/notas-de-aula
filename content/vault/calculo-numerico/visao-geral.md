@@ -11,7 +11,7 @@ title: "Visão geral"
 - Solução de equações
 	- [[Método da bipartição]]
 	- [[Método da falsa-posição]]
-	- [[Método de Newton]]
+	- [[Método de Newton para equações]]
 	- [[Método das secantes]]
 	- [[Resolução de equações polinomais]]
 	- [[Método de Birge-Vietta]]
@@ -24,7 +24,7 @@ title: "Visão geral"
 		- [[Método de Gauss-Seidel]]
 		- [[Técnicas de relaxação]]
 	- Sistemas não lineares
-		- [[Método de Newton]]
+		- [[Método de Newton para sistemas de equações]]
 		- [[Métodos de Quasi-Newton]]
 - Resolução número de Equações Diferenciais
 	- [[Método de Euler]]
