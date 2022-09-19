@@ -28,7 +28,7 @@ Uma outra definição que nos será útil é a de árvore completa.
 
 ## Exemplos
 
-Árvores binárias podem ser utilizadas para representar operações aritméticas. Por exemplo, a expressão $(A*B+C*D-E)$ pode ser representada pela árvore binária a seguir. 
+Árvores binárias podem ser utilizadas para representar operações aritméticas. Por exemplo, a expressão "A*B+C*D-E" pode ser representada pela árvore binária a seguir. 
 
 [![](https://mermaid.ink/img/pako:eNpdj7EOwjAMRH_F8kibgY4ZkIDyBWUjDFZjaEWTViEZUNV_J02XKvbid7qTzjO2o2aU-HY0dXCvlYU4AoQ4QbGHG2xUJDJhOD4Oz01aIannjC9ZpNpHqqReIRNig3WxRMPOUK9juXn1KPQdG1Yo46nJfRQqu0QfBT82P9ui9C5wiWHS5LnuKf5kUL5o-PLyB1CmQQY)](https://mermaid.live/edit#pako:eNpdj7EOwjAMRH_F8kibgY4ZkIDyBWUjDFZjaEWTViEZUNV_J02XKvbid7qTzjO2o2aU-HY0dXCvlYU4AoQ4QbGHG2xUJDJhOD4Oz01aIannjC9ZpNpHqqReIRNig3WxRMPOUK9juXn1KPQdG1Yo46nJfRQqu0QfBT82P9ui9C5wiWHS5LnuKf5kUL5o-PLyB1CmQQY)
 
@@ -56,7 +56,7 @@ def inorder(T, root):
 
 É possível implementar árvores binárias utilizando uma estrutura encadeada, em que cada nó é possui referências para o filho da esquerda e da direita respectivamente. 
 
-<iframe src="https://excalidraw.com/#json=HDqoj4NnCNbcTraYTnsmE,KhO4A-xOZ_MYLIO47iTFVA" height="400" width="600" title="Binary tree linked implementation"></iframe>
+<iframe src="https://excalidraw.com/#json=HDqoj4NnCNbcTraYTnsmE,KhO4A-xOZ_MYLIO47iTFVA" height="600" width="600" title="Binary tree linked implementation"></iframe>
 
 Para codificar tal solução é possível utilizar uma estrutura (ou classe) como a seguir:
 
@@ -71,7 +71,6 @@ class Node:
 Os algoritmos de busca, inserção e remoção frequentemente se aproveitam de outras propriedades como no caso de [[Árvores binárias de busca]].
 
 Outra opção é utilizar uma [[Árvores binárias implementadas em vetor|implementação em vetor]], que é utilizada em situações mais específicas, como na implementação de um [[Heap|heap]].
-
 
 # Referências
 - Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms. third. _New York_.
