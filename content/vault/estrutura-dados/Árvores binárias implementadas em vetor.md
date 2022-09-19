@@ -5,9 +5,8 @@ title: "Árvores binárias implementadas em vetor"
 # Implementaçao em vetor para árvores binárias
 
 Considere uma [[Árvores binárias#^f23f12|árvore binária completa]] com $n$ nós. Para uma implementação em vetor, assume-se que a raiz é colocada na posição $0$ do vetor, para cada posição $i = 1, \ldots, n-1$, tem-se:
-
-> $2i+1$: A posição do filho esquerdo do nó na posição $i$.
-> $2i+2$: A posição do filho direito do nó na posição $i$.
+- $2i+1$: A posição do filho esquerdo do nó na posição $i$.
+- $2i+2$: A posição do filho direito do nó na posição $i$.
 
 Portanto, a árvore
 

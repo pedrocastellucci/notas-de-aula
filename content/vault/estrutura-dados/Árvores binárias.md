@@ -28,7 +28,7 @@ Uma outra definição que nos será útil é a de árvore completa.
 
 ## Exemplos
 
-Árvores binárias podem ser utilizadas para representar operações aritméticas. Por exemplo, a expressão $(A*B + C*D - e)$ pode ser representada pela árvore binária a seguir. 
+Árvores binárias podem ser utilizadas para representar operações aritméticas. Por exemplo, a expressão $(A*B+C*D-E)$ pode ser representada pela árvore binária a seguir. 
 
 [![](https://mermaid.ink/img/pako:eNpdj7EOwjAMRH_F8kibgY4ZkIDyBWUjDFZjaEWTViEZUNV_J02XKvbid7qTzjO2o2aU-HY0dXCvlYU4AoQ4QbGHG2xUJDJhOD4Oz01aIannjC9ZpNpHqqReIRNig3WxRMPOUK9juXn1KPQdG1Yo46nJfRQqu0QfBT82P9ui9C5wiWHS5LnuKf5kUL5o-PLyB1CmQQY)](https://mermaid.live/edit#pako:eNpdj7EOwjAMRH_F8kibgY4ZkIDyBWUjDFZjaEWTViEZUNV_J02XKvbid7qTzjO2o2aU-HY0dXCvlYU4AoQ4QbGHG2xUJDJhOD4Oz01aIannjC9ZpNpHqqReIRNig3WxRMPOUK9juXn1KPQdG1Yo46nJfRQqu0QfBT82P9ui9C5wiWHS5LnuKf5kUL5o-PLyB1CmQQY)
 
