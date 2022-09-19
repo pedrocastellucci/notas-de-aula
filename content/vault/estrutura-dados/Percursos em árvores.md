@@ -74,6 +74,9 @@ O percurso em largura visita os nós na seguinte ordem:
 
 ## Aplicações de percursos em árvores
 
+- Contabilizar a memória ocupada pelos arquivos em um diretório (composto de arquivos que podem ser outros diretórios). 
+- Copiar uma árvore.
+- Deletar uma árvore
 
 
 # Referências

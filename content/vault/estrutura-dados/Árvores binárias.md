@@ -20,6 +20,12 @@ Também, é possível definir uma árvore binária de forma recursiva.
 > - uma árvore binária (possivelmente vazia), chamada de subárvore esquerda de $T$;
 > - uma árvore binária (possivelmente vazia), chamada de subárvore direita de $T$.
 
+Uma outra definição que nos será útil é a de árvore completa.
+> [!INFO]
+> Uma árvore binária é completa se em todos os seus níveis, com possível exceção do último, estão completamente cheios e todos os nós estão o mais à esquerda possível.
+
+^f23f12
+
 ## Exemplos
 
 Árvores binárias podem ser utilizadas para representar operações aritméticas. Por exemplo, a expressão $(A*B + C*D - e)$ pode ser representada pela árvore binária a seguir. 
@@ -48,9 +54,24 @@ def inorder(T, root):
 
 ## Implementações de árvore binária
 
-É possível implementar árvores binárias utilizando duas ideias:
-- Implementação em vetores
-- Implementação encadeda
+É possível implementar árvores binárias utilizando uma estrutura encadeada, em que cada nó é possui referências para o filho da esquerda e da direita respectivamente. 
+
+<iframe src="https://excalidraw.com/#json=HDqoj4NnCNbcTraYTnsmE,KhO4A-xOZ_MYLIO47iTFVA" height="400" width="600" title="Binary tree linked implementation"></iframe>
+
+Para codificar tal solução é possível utilizar uma estrutura (ou classe) como a seguir:
+
+```python
+class Node:
+	def __init__(self):
+		self.value = None
+		self.left = None
+		self.right = None
+```
+
+Os algoritmos de busca, inserção e remoção frequentemente se aproveitam de outras propriedades como no caso de [[Árvores binárias de busca]].
+
+Outra opção é utilizar uma [[Árvores binárias implementadas em vetor|implementação em vetor]], que é utilizada em situações mais específicas, como na implementação de um [[Heap|heap]].
+
 
 # Referências
 - Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms. third. _New York_.
