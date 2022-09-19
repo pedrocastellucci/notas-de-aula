@@ -17,7 +17,7 @@ Seria representada no vetor:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | A   | B   | C   | D   | E   | F   | G   | H   | I    |
 
-Note que, com essa implementação, é possível obter o pai de um nó na posição $i$ fazendo $p(i) = \lfloor\frac{i}{2}\rfloor$, ou seja, com custo $O(1)$. 
+Note que, com essa implementação, é possível obter o pai de um nó na posição $i$ fazendo $p(i) = \lfloor\frac{i-1}{2}\rfloor$, ou seja, com custo $O(1)$. 
 
 Essa implementação de árvores em vetores podem ser utilizadas na implementação de [[Heap|heaps]].
 
@@ -25,6 +25,8 @@ Essa implementação de árvores em vetores podem ser utilizadas na implementaç
 
 - Considere uma árvore completa com $d$ níveis cheios, quantas posições precisariam ser alocadas no vetor para armazenar tal árvore? #pergunta 
 - Qual a desvantagem de armazenar árvores não completas em vetor, da forma apresentada? #pergunta 
+- Como ficariam as expressões de filhos da esquerda, direita e pai de um nó na posição $i$ caso o vetor fosse indexado como o início em 1? #pergunta
+- Como ficariam as expressões de filhos e pai de um nó na posição $i$ caso o vetor fosse utilizado para implementar uma árvore ternária? #pergunta
 
 
 # Referências
