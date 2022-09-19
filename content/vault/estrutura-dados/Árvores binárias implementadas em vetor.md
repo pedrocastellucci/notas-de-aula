@@ -1,5 +1,5 @@
 ---
-title:"Árvores binárias implementadas em vetor"
+title: "Árvores binárias implementadas em vetor"
 ---
 
 # Implementaçao em vetor para árvores binárias
