@@ -28,7 +28,7 @@ Problemas envolvendo grafos emergem em diversas áreas da computação. Por isso
 	- Distâncias no mapa de uma cidade
 
 > [!INFO]
-> Um grafo $G = (V, E)$ é chamado de orientado (ou direcionado) se $E$ for formado por pares ordenados, $E = \{(i, j): i, j \in V\}$. Ou seja, as ligações entre os vértices possuem direção. Cada ligação é chamada de arco.   
+> Um grafo $G = (V, E)$ é chamado de orientado (ou direcionado) se $E$ for formado por pares ordenados, $E = \lbrace(i, j): i, j \in V\rbrace$. Ou seja, as ligações entre os vértices possuem direção. Cada ligação é chamada de arco.   
 
 - Exemplos de grafos direcionados
 	- Árvore genealógica

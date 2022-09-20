@@ -50,7 +50,7 @@ def depth(p):
 
 O algoritmo tem custo de pior caso $O(d_p)$ em que $d_p$ é a profundidade do nó $p$.
 
-> [!INFO]
+> [!INFO] Altura de um nó
 > A altura de um nó $p$ de uma árvore $T$:
 > - é igual a zero se $p$ é folha da árvore;
 > - caso contrário, é igual a um a mais do que a maior altura do seu maior filho.

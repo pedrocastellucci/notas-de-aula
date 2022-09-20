@@ -119,4 +119,4 @@ Os paradigmas de programação são estratégias gerais para o desenvolvimento d
 - [[Exponenciação melhorada]]
 
 # Referências
-- [[2017Sanchez_IntroductionRecursiveProgramming|Introduction to recursive programming. Sanchez (2019)]]
+- Introduction to recursive programming. Sanchez (2019).
