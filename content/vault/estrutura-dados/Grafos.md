@@ -8,7 +8,7 @@ alias: [grafo, grafos]
 Problemas envolvendo grafos emergem em diversas áreas da computação. Por isso, estruturas de dados e algoritmos para lidar com tais situações são fundamentais. 
 
 > [!INFO]
-> Um grafo $G = (V, E)$ é composto por um conjunto de vértices $V$ e um conjunto de arestas $E$. Os vértices são unidades (elementos ou entidades) e arestas indicam relações (ligações ou conexões) entre vértices, $E = \left\{\{i, j\} : i, j \in V\right\}$.
+> Um grafo $G = (V, E)$ é composto por um conjunto de vértices $V$ e um conjunto de arestas $E$. Os vértices são unidades (elementos ou entidades) e arestas indicam relações (ligações ou conexões) entre vértices, $E = \lbrace \lbrace i, j \rbrace : i, j \in V \rbrace$.
 
 - Exemplos:
 	- Fronteiras entre países
