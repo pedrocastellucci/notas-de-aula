@@ -42,12 +42,10 @@ Uma outra definição que nos será útil é a de árvore completa.
 
 > [!INFO]
 > A altura de uma árvore binária completa $T$ com $n$ nós é $h = \lfloor log\ n \rfloor$. 
-> Pode-se mostrar tal propriedade utilizando indução.
->> - Se $n = 1$, então $h = \lfloor log\ n \rfloor = 0$, provando o caso base.
->> - Para $n > 1$, suponha que o resultado é válido para todas as árvores com $n-1$ nós. Seja $T'$ a árvore obtida pela remoção dos $k$ nós do último nível de $T$. Logo $T'$ é uma árvore cheia com $n' = n - k$ nós. Pela hipótese indutiva, $h(T') = \lfloor log\ n' \rfloor$. Além disso, $T'$ é uma árvore cheia, tendo portando $n' = 2^{m+1}-1$ nós, sendo $m$ a altura de $T'$. Então 
-$$h(T) = 1 + h(T') = 1 + m = log\ (n' + 1).$$
- Mas $1 \leq k \leq n'+1$, portanto $\lfloor log\ (n' + 1) \rfloor = \lfloor log\ (n' + k) \rfloor < log\ (2n' + 2)$. Assim,
- $$h(T) = log\ (n' + 1) = \lfloor log\ (n' + k) \rfloor = \lfloor log\ (n) \rfloor$$
+- Pode-se mostrar tal propriedade utilizando indução.
+	- Se $n = 1$, então $h = \lfloor log\ n \rfloor = 0$, provando o caso base.
+	- Para $n > 1$, suponha que o resultado é válido para todas as árvores com $n-1$ nós. Seja $T'$ a árvore obtida pela remoção dos $k$ nós do último nível de $T$. Logo $T'$ é uma árvore cheia com $n' = n - k$ nós. Pela hipótese indutiva, $h(T') = \lfloor log\ n' \rfloor$. Além disso, $T'$ é uma árvore cheia, tendo portando $n' = 2^{m+1}-1$ nós, sendo $m$ a altura de $T'$. Então $$h(T) = 1 + h(T') = 1 + m = log\ (n' + 1).$$
+	- Mas $1 \leq k \leq n'+1$, portanto $\lfloor log\ (n' + 1) \rfloor = \lfloor log\ (n' + k) \rfloor < log\ (2n' + 2)$. Assim, $$h(T) = log\ (n' + 1) = \lfloor log\ (n' + k) \rfloor = \lfloor log\ (n) \rfloor.$$
 
 ## Percurso em-ordem em árvores binárias
 

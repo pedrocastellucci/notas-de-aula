@@ -8,7 +8,7 @@ alias: [grafo, grafos]
 Problemas envolvendo grafos emergem em diversas áreas da computação. Por isso, estruturas de dados e algoritmos para lidar com tais situações são fundamentais. 
 
 > [!INFO]
-> Um grafo $G = (V, E)$ é composto por um conjunto de vértices $V$ e um conjunto de arestas $E$. Os vértices são unidades (elementos ou entidades) e arestas indicam relações (ligações ou conexões) entre vértices, $E = \{\{i, j\} : i, j \in V\}$.
+> Um grafo $G = (V, E)$ é composto por um conjunto de vértices $V$ e um conjunto de arestas $E$. Os vértices são unidades (elementos ou entidades) e arestas indicam relações (ligações ou conexões) entre vértices, $E = \left\{\{i, j\} : i, j \in V\right\}$.
 
 - Exemplos:
 	- Fronteiras entre países
@@ -43,9 +43,11 @@ Problemas envolvendo grafos emergem em diversas áreas da computação. Por isso
 > - O grau de entrada de um vértice $d_v^-$ como o número de arcos que chegam em $v$.
 
 > [!INFO] Grafo completo
+> 
 > Um grafo é chamado de completo $G=(V, E)$  se $E = V \times V$.
 
 > [!HINT] Soma dos graus dos vértices
+> 
 > Um resultado útil para análise de algoritmos é o seguinte: A soma dos graus de todos os vértices de um grafo 
 > $$\sum_{v \in V} d_v = 2|E|.$$
 
