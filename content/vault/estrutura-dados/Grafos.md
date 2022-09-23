@@ -50,6 +50,8 @@ Problemas envolvendo grafos emergem em diversas áreas da computação. Por isso
 > 
 > Um resultado útil para análise de algoritmos é o seguinte: A soma dos graus de todos os vértices de um grafo 
 > $$\sum_{v \in V} d_v = 2|E|.$$
+> No caso de grafos direcionados tem-se que
+> $$\sum_{v \in V} d_v^+ = \sum_{v \in V} d_v^- = |E|.$$
 
 ## O tipo abstrato de dados grafo
 
