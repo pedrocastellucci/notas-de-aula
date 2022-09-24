@@ -3,9 +3,14 @@ title: "Método de Newton"
 alias: ["Método de Newton-Raphson", "método de Newton"]
 ---
 
-# O método de Newton (ou Newton-Raphson)
+# O método de Newton-Raphson
 
 ## Notas históricas
+
+> Publicação do método é de 1685 (por Isaac Newton).
+> Em 1960, Joseph Raphson publicou uma descrição simplificado.
+> Em 1740, Thomas Simpson descreveu o método para equações não lineares.
+
 Embora o nome do método seja derivado de [Isaac Newton](https://pt.wikipedia.org/wiki/Isaac_Newton). A descrição do método que vamos estudar é substancialmente diferente do utilizado originalmente por Newton. A primeira publicação desse método é datada de 1685. Em 1690, [Joseph Raphson ](https://en.wikipedia.org/wiki/Joseph_Raphson), publicou uma descrição simplificado. Por isso, o método é muitas vezes chamado de Método de Newton-Raphson. Newton e Raphson aplicaram o método exclusivamente para polinômios, foi apenas em 1740 que [Thomas Simpson](https://en.wikipedia.org/wiki/Thomas_Simpson) descreveu o método como um método iterativo para resolver equações não lineares usando [[Cálculo]]. Essencialmente, essa é a descrição que será apresentada aqui.
 
 ## Descrição do método
@@ -60,7 +65,8 @@ Algumas medidas de erro que podem ser utilizadas como critério de parada para o
 	- $x_{1} = x_0 - \frac{x_0^3 - 2x_0 + 2}{3x_0^2 - 2} = 0 - \frac{2}{-2} = 1$
 	- $x_2 = x_1 - \frac{x_1^3 - 2x_1 +2}{3x_1^2-2} = 1 - \frac{1}{1} = 0$
 	- $x_3 = 1, x_4 =0, \ldots,$ sem nunca convergir.
-	- graficamente, tem-se o seguinte: <iframe src="https://www.desmos.com/calculator/epndu9typm?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+	- graficamente, tem-se o seguinte: 
+	- <iframe src="https://www.desmos.com/calculator/epndu9typm?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 	- Note que esse exemplo é apenas para ilustrar uma situação possível de oscilação entre os valores. Na prática, é possível encontrar uma raiz de polinômios cúbicas utilizando o [método de Cardano-Tartaglia](https://pt.wikipedia.org/wiki/Equa%C3%A7%C3%A3o_c%C3%BAbica). Aliás, a solução de equações cúbicas está relacionada a uma novela matemática e à invenção de números imaginárias ([saiba mais](https://youtu.be/cUzklzVXJwo)).  
 
 
@@ -120,7 +126,7 @@ e, assim por diante, até a convergência. Note que se $x_0 = 1+i$, o valor de c
 
 A convergência do método de Newton para as raízes de polinômios gera o chamado [Fractal de Newton](https://en.wikipedia.org/wiki/Newton_fractal). 
 <a href="https://upload.wikimedia.org/wikipedia/commons/d/db/Julia_set_for_the_rational_function.png"><img alt="File:Julia set for the rational function.png" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Julia_set_for_the_rational_function.png/800px-Julia_set_for_the_rational_function.png?20111026001115" decoding="async" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Julia_set_for_the_rational_function.png/1200px-Julia_set_for_the_rational_function.png?20111026001115 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Julia_set_for_the_rational_function.png/1600px-Julia_set_for_the_rational_function.png?20111026001115 2x" data-file-width="2000" data-file-height="1500" width="720" height="540"></a>
-
+---
 # Referências e outros materiais
 - Peters, Sérgio, e Julio Felipe Szeremeta. Cálculo numérico computacional (2019).
 - Newton's method produces this fractal, why don't we teach it in calculus classes? by 3Blue1Brown. Disponível em: https://youtu.be/-RdOwhmqP5s.
