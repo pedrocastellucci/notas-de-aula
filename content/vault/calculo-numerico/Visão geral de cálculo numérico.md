@@ -18,7 +18,7 @@ title: "Visão geral"
 	- [[Método de Müller]]
 - Solução de sistemas de equações
 	- Sistemas lineares
-		- [[Eliminação de Gauss]]
+		- [[vault/calculo-numerico/Eliminação de Gauss]]
 		- [[Decomposição LU]]
 		- [[Método de Jacobi]]
 		- [[Método de Gauss-Seidel]]
