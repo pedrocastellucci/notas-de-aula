@@ -17,8 +17,8 @@ title: "Visão geral"
 	- [[Método de Birge-Vietta]]
 	- [[Método de Müller]]
 - Solução de sistemas de equações
-	- Sistemas lineares
-		- [[vault/calculo-numerico/Eliminação de Gauss]]
+	- [[Solução de sistemas lineares]]
+		- [[Eliminação de Gauss]]
 		- [[Decomposição LU]]
 		- [[Método de Jacobi]]
 		- [[Método de Gauss-Seidel]]

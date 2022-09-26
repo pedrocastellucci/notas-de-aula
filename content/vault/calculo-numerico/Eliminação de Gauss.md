@@ -1,9 +1,10 @@
 ---
 title: "Eliminação de Gauss"
+alias: ["eliminação de Gauss"]
 ---
 
 # Eliminação de Gauss
- 
+
 O método da eliminação de Gauss é um método eliminativo para a solução de sistemas lineares, $Ax = b$. O método está baseado em uma propriedade da Álgebra Linear que garante que uma solução $x$ do sistema $Ax=b$ obedece qualquer combinação linear das equações do sistema. A ideia fundamental é transformar o sistema linear $Ax=b$ em um [[vault/calculo-numerico/Sistemas lineares equivalentes|sistema linear equivalente]] de mais fácil solução através do processo de escalonamento.
 
 São utilizadas três operações para simplificar o sistema linear a ser resolvido:
