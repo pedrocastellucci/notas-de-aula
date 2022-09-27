@@ -34,9 +34,9 @@ Trata-se de um sistema linear. De uma forma geral, pode-se formular esse tipo de
 > com $a_{ij}$ e $b_i$ constantes e deseja-se determinar as variáveis $x_i$.
 
 Os métodos para resolver esse tipo de problema pode ser classificados em:
-1. Métodos diretos (ou eliminativos)
-2. Métodos iterativos
-3. Métodos de Otimização
+1. Métodos diretos (ou eliminativos), que garantem teoricamente que uma solução será encontrada, caso exista.
+2. Métodos iterativos. Métodos iterativos geram uma sequência de aproximações para a solução.
+3. Métodos de Otimização. Métodos que constroem a função $F(X) = x^tAx - 2b^tx$ e tenta-se encontrar o seu mínimo, que é solução do sistema.
 
 >[!INFO] Métodos diretos
 > Exemplos de métodos diretos são [[Eliminação de Gauss]] e [[Decomposição LU]]
