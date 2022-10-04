@@ -7,9 +7,9 @@ alias: [árvore, árvores]
 
 Árvores são estruturas de dados não lineares. Uma organização não linear é mais rica do que uma organização linear, em que há uma relação simples de predecessor ou sucessor entre dois objetos no conjunto. Em uma árvore, há relações **hierárquicas** com elementos sendo ancestrais ou descendentes de outro. 
 
-Um exemplo é a relação de orientação acadêmica do recorte a seguir.
+Um exemplo é relacionado à organização de um livro é dado a seguir. 
 
-![[attachments/Pasted image 20220919154430.png]]
+[![](https://mermaid.ink/img/pako:eNp1kb1qwzAQx19F3JwYJHfyUCjN2EDA3aQMIjo3BlsyqlQoIQ9TOnTqU_jFenFqcqGNBiH-Hz8J3QF2wSFU8BLtsBfPK-MFrQf91L7FsBXL5b14tIPUtI3fKXdByO3_GcUy6kam1EVR3PDuWN__Zk5XT34tpa5x_Bo_6QGF_GtzMpM9azGoOtvqAlUcOtvqGjrLJWvNUFInd6NKqTc2jh_0o83lt5jPqUwur2uwgB5jb1tH0zmc0gbSHns0UNHRYWNzlwwYf6SozSnU734HVYoZF5AHZxOuWku4HqrGdq-komtTiOvzxKfBH38ANvScnQ)](https://mermaid.live/edit#pako:eNp1kb1qwzAQx19F3JwYJHfyUCjN2EDA3aQMIjo3BlsyqlQoIQ9TOnTqU_jFenFqcqGNBiH-Hz8J3QF2wSFU8BLtsBfPK-MFrQf91L7FsBXL5b14tIPUtI3fKXdByO3_GcUy6kam1EVR3PDuWN__Zk5XT34tpa5x_Bo_6QGF_GtzMpM9azGoOtvqAlUcOtvqGjrLJWvNUFInd6NKqTc2jh_0o83lt5jPqUwur2uwgB5jb1tH0zmc0gbSHns0UNHRYWNzlwwYf6SozSnU734HVYoZF5AHZxOuWku4HqrGdq-komtTiOvzxKfBH38ANvScnQ)
 
 ## Definições e propriedades
 
@@ -36,7 +36,7 @@ Note que essa definição é recursiva, de forma que uma árvore $T$ é vazia ou
 > Seja $p$  um nó da árvore. A profundidade de $p$ é o número de ancestrais que $p$ possui, com exceção dele mesmo
 
 - Note que, pela definição, 
-	- se $p$ é a raiz da árvore então a profunidade de $p$ é zero; 
+	- se $p$ é a raiz da árvore então a profundidade de $p$ é zero; 
 	- senão a profundidade de $p$ é igual a profundidade do pai de $p$ mais um.
 Com isso, pode-se construir o seguinte algoritmo, que computa a profundidade de um nó $p$.
 
