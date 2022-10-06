@@ -16,7 +16,7 @@ title: "Visão geral de estrutura da dados"
 	- [[vault/estrutura-dados/Percursos em árvores |Percursos em árvores]]
 	- [[vault/estrutura-dados/Árvores binárias |Árvores binárias]]
 		- [[Árvores binárias implementadas em vetor]]
-		- [[Heaps]]
+		- [[vault/estrutura-dados/Heaps]]
 	- [[Árvores binárias de busca]]
 		- [[Árvores binárias de busca balanceadas]]
 - [[Grafos]]

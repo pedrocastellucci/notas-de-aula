@@ -19,7 +19,7 @@ Suponha um arquivo de 100000 caracteres de dados que se deseja comprimir. É obs
 | Código de tamanho fixos    | 000 | 001 | 010 | 011 | 100  | 101  |
 | Código de tamanho variável | 0   | 101 | 100 | 111 | 1101 | 1100 |
 
-Utilizando um código de tamanho fixo, seriam utilizados $3 \cdot (45 + 13 + 12 + 16 + 9 + 5)\cdot 10^3 = 300000$ bits. Mas utilizando o código de tamanho variável proposto, seriam utilizados $(1 \cdot 45 + 3 \cdot (13 + 12 + 11) + 4 \cdot (9 + 5)) \cdot 10^3 = 224000$ bits. Resultando numa economia de 66000 bits (aproximadamente 25%). Na verdade, essa é uma forma ótima de representar esses dados. 
+Utilizando um código de tamanho fixo, seriam utilizados $3 \cdot (45 + 13 + 12 + 16 + 9 + 5)\cdot 10^3 = 300000$ bits. Mas utilizando o código de tamanho variável proposto, seriam utilizados $(1 \cdot 45 + 3 \cdot 13 + 3 \cdot 12 + 3 \cdot 16 + 4 \cdot 9 + 4 \cdot 5) \cdot 10^3 = 224000$ bits. Resultando numa economia de 66000 *bits* (aproximadamente 25%). Na verdade, essa é uma forma ótima de representar esses dados. 
 
 # Códigos de prefixo
 
@@ -48,7 +48,7 @@ function huffman_tree(C)
 
 ### Análise do algoritmo
 
-Assumindo que a fila de prioridade seja implementada com uma [[Heap]] de mínimo, a construção da [[Heap]], para uma cadeia com $n$ caracteres pode ser feita em $O(log(n))$. O laço de repetição executa $(n-1)$ vezes, como cada operação da [[Heap]] possui custo $O(log(n))$, o laço contribui com $O(nlog(n))$ para o custo do algoritmo. É possível implementá-lo em $O(n log (log(n)))$ utilizando uma [[Árvore de Van Emde Boas]]. 
+Assumindo que a fila de prioridade seja implementada com um [[Heap]] de mínimo, a construção do [[Heap]], para uma cadeia com $n$ caracteres pode ser feita em $O(log(n))$. O laço de repetição executa $(n-1)$ vezes, como cada operação da [[Heap]] possui custo $O(log(n))$, o laço contribui com $O(nlog(n))$ para o custo do algoritmo. É possível implementá-lo em $O(n log (log(n)))$ utilizando uma [[Árvore de Van Emde Boas]]. 
 
 # Referências
 
