@@ -26,7 +26,7 @@ title: "Cálculo numérico"
 	- Sistemas não lineares
 		- [[Método de Newton para sistemas de equações]]
 		- [[Métodos de Quasi-Newton]]
-- [[vault/calculo-numerico/Resolução numérica de valores de problemas inicias]]
+- [[Resolução numérica de valores de problemas iniciais]]
 	- [[Método de Euler]]
 	- [[Métodos de Runge-Kutta]]
 	- [[Sistemas de equações diferenciais]]
