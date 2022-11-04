@@ -17,7 +17,7 @@ Com isso, tem-se a uma [[equação diferencial ordinária]] que representa o mov
 >[!INFO] Equação do pêndulo
 > $$\frac{d^2\theta}{dt^2} + \frac{g}{\ell} sin(\theta) = 0$$
 
-- $L$ é o comprimento do pêndulo
+- $\ell$ é o comprimento do pêndulo
 - $g \approx 9.81\frac{m}{s^2}$ é a constante gravitacional 
 
 Para valores pequenos de $\theta$ pode-se utilizar a aproximação $sin(\theta) \approx \theta$ simplificando o processo de solução da EDO.
@@ -58,7 +58,7 @@ plt.plot(t, y)
 plt.show()
 ```
 
-As relações de recorrência, utilizando o [[Métodos de Runge-Kutta|Método de Runge-Kutta]] de segunda ordem são
+Uma alternativa seria a utilização do [[Métodos de Runge-Kutta|Método de Runge-Kutta]] de segunda ordem.
 
 ```python
 import matplotlib.pyplot as plt
@@ -88,9 +88,61 @@ plt.plot(t, y)
 plt.show()
 ```
 
+## Montando uma animação
+
+Com a solução de equação diferencial, é possível montar uma animação como faz o código a seguir.
+
+```python
+import math
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+import numpy as np
+
+def pendulum_func(y1, y2):
+    return y2, -g/L*math.sin(y1)
+
+def init():    
+    ax.set_xlim(-1.4*L, 1.4*L)
+    ax.set_ylim(-1.2*L, 0.1)
+    return line,
+
+def update(frame):
+    theta = frame
+    x = np.sin(theta)*L
+    y = -np.cos(theta)*L
+    thisx = [0, x]
+    thisy = [0, y]
+    line.set_data(thisx, thisy)
+    return line,
+
+g = 9.81 # m/s^2
+L = 0.1 # meters
+y1 = math.pi/4  # 45 degrees
+y2 = 0  # Initial velocity is zero
+t = 0
+T = 1.31 # Simulate until this time
+n = 100 # How many discretization steps
+h = (T-t)/n
+positions = [(t, y1)]
+while t < T:
+    K1 = pendulum_func(y1, y2)
+    K2 = pendulum_func(y1 + h*K1[0], y2+h*K1[1])
+    y1, y2 = y1 + h/2*(K1[0] + K2[0]), y2 + h/2*(K1[1] + K2[1])
+    t += h
+    positions.append((t, y1)) # Saving to plot
+
+t, y = zip(*positions)
+fig, ax = plt.subplots()
+xdata, ydata = [], []
+line, = ax.plot([], [], 'o-', lw=1)
+fps = 30
+ani = FuncAnimation(fig, update, frames=y,
+                    init_func=init, blit=True, interval=1000/fps)
+plt.show()
+```
 
 # Referências
 
 - Burden, R. L., Faires, J. D., & Burden, A. M. (2015). _Numerical analysis_. Cengage learning.
-- Pendulum (Mechanics). Wikpedia. Disponível em: https://en.wikipedia.org/wiki/Pendulum_(mechanics). Acessado em Novembro de 2022.
+- Pendulum (Mechanics). Wikipedia. Disponível em: https://en.wikipedia.org/wiki/Pendulum_(mechanics). Acessado em Novembro de 2022.
 - Simple pendulum with friction and forcing | Lecture 27 | Differential Equations for Engineers. Disponível em https://youtu.be/SZWn7x4g-Vo. Acessado em Novembro de 2022.
