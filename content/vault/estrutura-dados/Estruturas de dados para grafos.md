@@ -4,7 +4,9 @@ title: "Estruturas de dados para grafos"
 
 # Introdução
 
-Existem diversas formas de representar um grafo computacionalmente. Duas formas consideradas clássicas são (i) Lista de adjacências e (ii) Matriz de adjacências. 
+Existem diversas formas de representar um grafo computacionalmente. Duas formas consideradas clássicas são:
+- Lista de adjacências;
+- Matriz de adjacências. 
 
 
 ## Lista de adjacências
