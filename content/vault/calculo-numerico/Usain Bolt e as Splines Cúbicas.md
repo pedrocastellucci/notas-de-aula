@@ -72,11 +72,11 @@ para cada intervalo $[t_i, t_{i+1}], i = 1, \ldots, m$. Como a velocidade (aprox
 
 $$\frac{d\tilde{s}(t)}{dt} = 3a_i(t - t_i)^2 + 2b_i(t - t_i) + c_i, \quad [t_i, t_{i+1}], \quad i = 1, \ldots, m$$
 
-pode-se encontrar um ponto de máximo (aproximado) para $s(t)$ calculando 
+pode-se encontrar um ponto de máximo (aproximado) para a interpolação calculando 
 
-$$\max_{i \in \left\{1, \ldots, m\right\}}  \frac{d \tilde{s}_i(t)}{dt}.$$
+$$\max_{i \in \lbrace 1, \ldots, m \rbrace}  \frac{d \tilde{s}_i(t)}{dt}.$$
 
-Para calcular o $\displaystyle \max_{i \in \left\{1, \ldots, m\right\}} \frac{d \tilde{s}_i(t)}{dt}$, pode-se encontrar um ponto crítico utilizando $\frac{d^2\tilde{s}_i(t)}{dt^2}$ para cada um dos intervalos $[t_i, t_{i+1}], i \in \left\{1, \ldots, m\right\}$.
+Para calcular o $\displaystyle \max_{i \in \lbrace 1, \ldots, m \rbrace} \frac{d \tilde{s}_i(t)}{dt}$, pode-se encontrar um ponto crítico utilizando $\frac{d^2\tilde{s}_i(t)}{dt^2}$ para cada um dos intervalos $[t_i, t_{i+1}], i \in \left\{1, \ldots, m\right\}$.
 
 Como 
 $$\frac{d^2 \tilde{s}_i(t)}{dt} = 6a_i(t - t_i) + 2b_i = 0, \quad i \in \{1, \ldots, m\},$$ 
