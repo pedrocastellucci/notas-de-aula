@@ -66,7 +66,7 @@ $$
 
 A solução do sistema fornece os valores de $S = [0, S_2, \ldots, S_{m}, 0]$. Isso permite o cálculo de $a_i$,  $b_i$,  $c_i$  e $d_i$, $i = 1, \ldots, m$, para uma função aproximadora de $s(t)$.
 
-$$s(t) \approx \tilde{s}_t(i) = a_i(t - t_i)^3 + b_i(t -t_i)^2 + c_i(t -t_i) + d_i, \left[t_i, t_{i+1}\right].$$
+$$s(t) \approx \tilde{s}_t(i) = a_i(t - t_i)^3 + b_i(t -t_i)^2 + c_i(t -t_i) + d_i, t_i, t_{i+1}.$$
 
 Como a velocidade (aproximada) é dada por:  
 
