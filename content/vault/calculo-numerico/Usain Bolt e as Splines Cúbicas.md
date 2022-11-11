@@ -76,7 +76,7 @@ pode-se encontrar um ponto de máximo (aproximado) para a interpolação calcula
 
 $$\max_{i \in \lbrace 1, \ldots, m \rbrace}  \frac{d \tilde{s}_i(t)}{dt}.$$
 
-Para calcular o $\displaystyle \max_{i \in \lbrace 1, \ldots, m \rbrace} \frac{d \tilde{s}_i(t)}{dt}$, pode-se encontrar um ponto crítico utilizando $\frac{ d^2 \tilde{s}_i(t) }{ dt^2 }$ 
+Para calcular o $\displaystyle \max_{i \in \lbrace 1, \ldots, m \rbrace} \frac{d \tilde{s}_i(t)}{dt}$, pode-se encontrar um ponto crítico utilizando $\frac{ d^2 \tilde{s}_i(t) }{ dt^2 } = 0$  para cada $i = 1, \ldots, m$. 
 
 Como 
 $$\frac{d^2 \tilde{s}_i(t)}{dt} = 6a_i(t - t_i) + 2b_i = 0, \quad i \in \{1, \ldots, m\},$$ 
@@ -90,8 +90,6 @@ Com isso, tem-se que a velocidade crítica (máxima ou mínima) em cada interval
 $$\frac{d \tilde{s}_i(t_c)}{dt} = 3a_i(t_c - t_i)^2 + 2b_i(t_c - t_i) + c_i, \quad i \in \{1, \ldots, m\}.$$
 
 Note ainda que é necessário garantir que o ponto de mínimo ocorre dentro do domínio de cada função, $[t_i, t_{i+1}], i \in \{1, \ldots, m\}$, e pode ser necessário avaliar a função nos extremos do intervalo.
-
----
 
 # Código no Octave para plotar a velocidade em cada ponto
 
@@ -141,7 +139,6 @@ for i=1:m
 endfor
 ```
 
---- 
 # Referências 
 
 - Strogatz, Steven. _Infinite powers: How calculus reveals the secrets of the universe_. Houghton Mifflin Harcourt, 2019.
