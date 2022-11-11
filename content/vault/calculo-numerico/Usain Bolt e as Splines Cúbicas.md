@@ -2,6 +2,8 @@
 title: "Usain Bolt e as Splines Cúbicas"
 ---
 
+# Usain Bolt e as Splines Cúbicas
+
 Nos jogos olímpicos de Beijing, China, em 2008, os oito homens mais rápidos do mundo participaram da prova dos 100 metros rasos. Um deles era o jamaicano de 21 anos [Usain Bolt](https://pt.wikipedia.org/wiki/Usain_Bolt).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oetnQgsoN-o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -64,13 +66,7 @@ $$
 
 A solução do sistema fornece os valores de $S = [0, S_2, \ldots, S_{m}, 0]$. Isso permite o cálculo de $a_i$,  $b_i$,  $c_i$  e $d_i$, $i = 1, \ldots, m$, para uma função aproximadora de $s(t)$.
 
-$x \approx \tilde{s}$
-
-$x \approx \tilde{s}_i$
-
-$$
-s(t) \approx \tilde{s}_i(t) = a_i(t - t_i)^3 + b_i(t - t_i)^2 + c_i(t - t_i) + d_i, [t_i, t_{i+1}], \  i = 1, \ldots, m.
-$$
+$$s(t) \approx \tilde{s}_i(t) = a_i(t - t_i)^3 + b_i(t - t_i)^2 + c_i(t - t_i) + d_i, \quad [t_i, t_{i+1}], \quad i = 1, \ldots, m.$$
 
 Como a velocidade (aproximada) é dada por:  
 
