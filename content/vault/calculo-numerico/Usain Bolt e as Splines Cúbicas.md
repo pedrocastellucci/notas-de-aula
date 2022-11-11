@@ -107,7 +107,7 @@ end
 
 B = 6*B';
 
-S = inv(A)*B;
+S = linsolve(A, B);
 S = [0; S; 0]
 
 for i=1:m
