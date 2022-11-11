@@ -76,7 +76,7 @@ pode-se encontrar um ponto de máximo (aproximado) para a interpolação calcula
 
 $$\max_{i \in \lbrace 1, \ldots, m \rbrace}  \frac{d \tilde{s}_i(t)}{dt}.$$
 
-Para calcular o $\displaystyle \max_{i \in \lbrace 1, \ldots, m \rbrace} \frac{d \tilde{s}_i(t)}{dt}$, pode-se encontrar um ponto crítico utilizando $\frac{d^2\tilde{s}_i(t)}{dt^2}$ para cada um dos intervalos $[t_i, t_{i+1}], i \in \left\{1, \ldots, m\right\}$.
+Para calcular o $\displaystyle \max_{i \in \lbrace 1, \ldots, m \rbrace} \frac{d \tilde{s}_i(t)}{dt}$, pode-se encontrar um ponto crítico utilizando $\frac{ d^2 \tilde{s}_i(t) }{ dt^2 }$ 
 
 Como 
 $$\frac{d^2 \tilde{s}_i(t)}{dt} = 6a_i(t - t_i) + 2b_i = 0, \quad i \in \{1, \ldots, m\},$$ 
