@@ -65,14 +65,15 @@ $$
 A solução do sistema fornece os valores de $S = [0, S_2, \ldots, S_{m}, 0]$. Isso permite o cálculo de $a_i$,  $b_i$,  $c_i$  e $d_i$, $i = 1, \ldots, m$, para uma função aproximadora de $s(t)$.
 
 $$
-\begin{align*}
-s(t) \approx \tilde{s}_i(t) = a_i(t - t_i)^3 + b_i(t - t_i)^2 + c_i(t - t_i) + d_i, \quad [t_i, t_{i+1}], \quad  i = 1, \ldots, m.
-\end{align*}
+s(t) \approx \tilde{s}_i(t) = a_i(t - t_i)^3 + b_i(t - t_i)^2 + c_i(t - t_i) + d_i, 
 $$
+para cada $[t_i, t_{i+1}], \  i = 1, \ldots, m.$
 
 Como a velocidade (aproximada) é dada por:  
 
-$$\frac{d \tilde{s}_i(t)}{dt} = 3a_i(t - t_i)^2 + 2b_i(t - t_i) + c_i, \quad [t_i, t_{i+1}], \quad  i = 1, \ldots, m$$ pode-se encontrar um ponto de máximo (aproximado) para $s(t)$ calculando 
+$$\frac{d \tilde{s}_i(t)}{dt} = 3a_i(t - t_i)^2 + 2b_i(t - t_i) + c_i, \ [t_i, t_{i+1}], \  i = 1, \ldots, m$$ 
+
+pode-se encontrar um ponto de máximo (aproximado) para $s(t)$ calculando 
 
 $$\max_{i \in \{1, \ldots, m\}}  \frac{d \tilde{s}_i(t)}{dt}.$$
 
@@ -80,7 +81,12 @@ Para calcular o $\displaystyle \max_{i \in \{1, \ldots, m\}} \frac{d \tilde{s}_i
 
 Como 
 $$\frac{d^2 \tilde{s}_i(t)}{dt} = 6a_i(t - t_i) + 2b_i = 0, \quad i \in \{1, \ldots, m\},$$ 
-então, o ponto crítico (máximo ou mínimo) ocorre em $$t_{c} = t_i - \frac{b_i}{3a_i}.$$ Com isso, tem-se que a velocidade crítica (máxima ou mínima) em cada intervalo $[t_i, t_{i+1}], i \in \{1, \ldots, m\}$:
+
+então, o ponto crítico (máximo ou mínimo) ocorre em
+
+$$t_{c} = t_i - \frac{b_i}{3a_i}.$$ 
+
+Com isso, tem-se que a velocidade crítica (máxima ou mínima) em cada intervalo $[t_i, t_{i+1}], i \in \{1, \ldots, m\}$:
 
 $$\frac{d \tilde{s}_i(t_c)}{dt} = 3a_i(t_c - t_i)^2 + 2b_i(t_c - t_i) + c_i, \quad i \in \{1, \ldots, m\}.$$
 
