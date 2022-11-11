@@ -62,9 +62,13 @@ S_{m}
 \end{bmatrix}
 $$
 
-A solução do sistema fornece os valores de $S = [0, S_2, \ldots, S_{m}, 0]$. Isso permite o cálculo de $a_i$,  $b_i$,  $c_i$  e $d_i$, $i = 1, \ldots, m$, para uma função aproximadora de 
+A solução do sistema fornece os valores de $S = [0, S_2, \ldots, S_{m}, 0]$. Isso permite o cálculo de $a_i$,  $b_i$,  $c_i$  e $d_i$, $i = 1, \ldots, m$, para uma função aproximadora de $s(t)$.
 
-$$s(t) \approx \tilde{s}_i(t) = a_i(t - t_i)^3 + b_i(t - t_i)^2 + c_i(t - t_i) + d_i, \quad [t_i, t_{i+1}], \quad  i = 1, \ldots, m.$$
+$$
+\begin{align*}
+s(t) \approx \tilde{s}_i(t) = a_i(t - t_i)^3 + b_i(t - t_i)^2 + c_i(t - t_i) + d_i, \quad [t_i, t_{i+1}], \quad  i = 1, \ldots, m.
+\end{align*}
+$$
 
 Como a velocidade (aproximada) é dada por:  
 
