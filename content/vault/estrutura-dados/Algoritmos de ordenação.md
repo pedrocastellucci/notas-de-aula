@@ -19,12 +19,12 @@ Frequentemente, a sequência é fornecida como um vetor com $n$ elementos, mas t
 
 # Algoritmos de ordenação
 
-[[Insertion sort]]
-[[Bubble sort]]
-[[Selection sort]]
-[[Heapsort]]
-[[Mergesort]]
-[[Quicksort]]
+- [[Insertion sort]]
+- [[Bubble sort]]
+- [[Selection sort]]
+- [[Heapsort]]
+- [[Quicksort]]
+- [[Mergesort]]
 
 ## Algoritmo de ordenação estável
 
