@@ -70,19 +70,24 @@ Uma alternativa seria a utilização do [[Métodos de Runge-Kutta|Método de Run
 
 $$
   \begin{align}
-    & y_1^{(k+1)} = y_1^{(k)} + 0.5h(K_1^{f_1} + K_2^{f_1})\\
-    & y_2^{(k+1)} = y_2^{(k)} + 0.5h(K_1^{f_2} + K_2^{f_2})\\
+    & y_1^{(k+1)} = y_1^{(k)} + 0.5h(K_1^{f_1} + K_2^{f_1}),\\
+    & y_2^{(k+1)} = y_2^{(k)} + 0.5h(K_1^{f_2} + K_2^{f_2}),\\
     & t^{(k+1)} = t^{(k)} + h
   \end{align}
 $$
   em que
 $$
   \begin{align}
-    & K_1^{f_1} = f_1(t^{(k)}, y_1^{(k)}, y_2^{(k)})\\
-    & K_1^{f_2} = f_2(t^{(k)}, y_1^{(k)}, y_2^{(k)})\\    
-    & K_2^{f_1} = f_1(t^{(k)} + h, y_1^{(k)} + h K_1^{f_1}, y_2^{(k)} + h K_1^{f_2})\\
+    & K_1^{f_1} = f_1(t^{(k)}, y_1^{(k)}, y_2^{(k)}),\\
+    & K_1^{f_2} = f_2(t^{(k)}, y_1^{(k)}, y_2^{(k)}),
+\end{align}
+$$
+e
+$$
+\begin{align}
+    & K_2^{f_1} = f_1(t^{(k)} + h, y_1^{(k)} + h K_1^{f_1}, y_2^{(k)} + h K_1^{f_2}),\\
     & K_2^{f_2} = f_2(t^{(k)} + h, y_1^{(k)} + h K_1^{f_1}, y_2^{(k)} + h K_1^{f_2})
-  \end{align}
+\end{align}
 $$
 
 
