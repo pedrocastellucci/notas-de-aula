@@ -27,9 +27,17 @@ A equação diferencial de segunda ordem que representa o movimento do pêndulo,
 - $\dot{\theta} = \dot{y_1} = y_2$
 - $\ddot{\theta} = \dot{y_2} = -\frac{g}{\ell}sin(y_1)$
 
-A relação de recorrência para resolver o PVI utilizando o [[Método de Euler]] é dada por:
-- $y_1^{(k+1)} = y_1^{(k)} + h y_2^{(k)}$
-- $y_2^{(k+1)} = y_2^{(k)}-h\frac{g}{\ell}sin(y_1^{(k)})$
+Considerando as condições iniciais $\theta(t = 0) = \frac{\pi}{4}$ e $\dot{\theta}(t=0) = 0$, e o domínio $[0, T]$, a relação de recorrência para resolver o PVI utilizando o [[Método de Euler]] é dada por:
+
+$$
+\begin{align}
+&y_1^{(k+1)} = y_1^{(k)} + h y_2^{(k)}\\
+&y_2^{(k+1)} = y_2^{(k)}-h\frac{g}{\ell}sin(y_1^{(k)})\\
+&t^{(k+1)} = t^{(k)} + h, 
+\end{align}
+$$
+
+para $k = 1, \ldots, \lfloor\frac{b-a}{n} \rfloor$ para $n$ subdivisões do domínio.
 
 ```python
 import matplotlib.pyplot as plt
@@ -58,7 +66,26 @@ plt.plot(t, y)
 plt.show()
 ```
 
-Uma alternativa seria a utilização do [[Métodos de Runge-Kutta|Método de Runge-Kutta]] de segunda ordem.
+Uma alternativa seria a utilização do [[Métodos de Runge-Kutta|Método de Runge-Kutta]] de segunda ordem. Para isso, pode-se usar as seguintes relações de recorrência com as funções $f_1(t, y_1, y_2) = y_2$ e $f_2(t, y_1, y_2) = -\frac{g}{\ell}sin(y1)$
+
+$$
+  \begin{align}
+    & y_1^{(k+1)} = y_1^{(k)} + 0.5h(K_1^{f_1} + K_2^{f_1})\\
+    & y_2^{(k+1)} = y_2^{(k)} + 0.5h(K_1^{f_2} + K_2^{f_2})\\
+    & t^{(k+1)} = t^{(k)} + h
+  \end{align}
+$$
+  em que
+$$
+  \begin{align}
+    & K_1^{f_1} = f_1(t^{(k)}, y_1^{(k)}, y_2^{(k)})\\
+    & K_1^{f_2} = f_2(t^{(k)}, y_1^{(k)}, y_2^{(k)})\\    
+    & K_2^{f_1} = f_1(t^{(k)} + h, y_1^{(k)} + h K_1^{f_1}, y_2^{(k)} + h K_1^{f_2})\\
+    & K_2^{f_2} = f_2(t^{(k)} + h, y_1^{(k)} + h K_1^{f_1}, y_2^{(k)} + h K_1^{f_2})
+  \end{align}
+$$
+
+
 
 ```python
 import matplotlib.pyplot as plt
@@ -88,9 +115,14 @@ plt.plot(t, y)
 plt.show()
 ```
 
+Ambas as soluções, com o [[Método de Euler]] e com o [[Métodos de Runge-Kutta|Método de Runge-Kutta]] de segunda ordem, possuem limitações conforme o valor de $T$ aumenta, devido ao acúmulo de erros numéricos ao longo das iterações.  Experimente com diferentes valores de $T$ para verificar o problema. 
+
+- Para diferentes valores de $T$ compare os resultados dos dois métodos, para determinar qual dos métodos é mais preciso #tarefa
+- Implemente o [[Métodos de Runge-Kutta|Método de Runge-Kutta]] de quarta ordem para o problema e compare sua precisão com os demais. #desafio 
+
 ## Montando uma animação
 
-Com a solução de equação diferencial, é possível montar uma animação como faz o código a seguir.
+Com a solução do PVl, é possível montar uma animação como faz o código a seguir.
 
 ```python
 import math
