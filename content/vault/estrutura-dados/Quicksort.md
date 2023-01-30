@@ -39,7 +39,7 @@ partition(v, p, r)
 	swap(v[i+1], v[r])
 	return i+1
 ```
-
+	
 No começo de cada iteração do laço, para qualquer índice $k$ no vetor
 1. Se $p \leq k \leq i$, então $A[k] \leq x$.
 2. Se $i+1 \leq k \leq j-1$, então $A[k] > x$.
